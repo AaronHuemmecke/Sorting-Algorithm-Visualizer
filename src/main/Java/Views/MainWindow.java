@@ -354,8 +354,8 @@ public class MainWindow extends JFrame
         {
             welcomeText.setText("Welcome to the Sorting Algorithm Visualizer. <br> <br>" +
                     "This program aims to explain sorting algorithms to you in a clear way step by step. <br> <br>" +
-                    "The program is divided into three different parts that you can freely navigate through: <br> <br>" +
-                    "1. In the section <b>explanation</b> there are explainatory texts regarding the baiscs of sorting algorithhms. Moreover, some sortings algorithms are described textually and graphically.<br>" +
+                    "The program is divided into three different sections that you can freely navigate through: <br> <br>" +
+                    "1. In the section <b>Explanation</b> there are explanatory texts regarding the basics of sorting algorithms. Moreover, some sorting algorithms are described textually and graphically.<br>" +
                     "2. In the section <b>Algorithm Visualization</b> there is a tool that you can use to execute different sorting algorithms and see a graphic visualization, explanations and further information at the same time. <br>" +
                     "3. In the section <b>Algorithm Quiz</b> you can check if you can recognize a sorting algorithm by its visualization and thereby test your understanding of the different sorting algorithms. <br> <br>" +
                     "The program supports the languages German and English. You can choose the language in the top left corner. <br> <br>" +
@@ -452,7 +452,7 @@ public class MainWindow extends JFrame
                     "<a href = 'https://commons.wikimedia.org/wiki/File:Selection-Sort-Animation.gif' > Selection-Sort-Animation.gif</a> by Joestape89 under <a href = 'https://creativecommons.org/licenses/by-sa/3.0/'> CC BY-SA 3.0</a> for the explanation “SelectionSort”,<br> " +
                     "<a href = 'https://www.geeksforgeeks.org/insertion-sort/' > Insertion Sort</a> from GeeksforGeeks under <a href = 'https://creativecommons.org/licenses/by-sa/4.0/'> CC BY-SA 4.0</a> (edited and translated) for the explanation “InsertionSort”,<br> " +
                     "<a href = 'https://de.wikibooks.org/wiki/Algorithmen_und_Datenstrukturen_in_C/_Insertionsort' > Algorithmen und Datenstrukturen in C/ Insertionsort</a> from Wikibooks under <a href = 'https://creativecommons.org/licenses/by-sa/3.0/'> CC BY-SA 3.0</a> (edited and translated) - <a href = 'https://de.wikibooks.org/w/index.php?title=Algorithmen_und_Datenstrukturen_in_C/_Insertionsort&action=history'>  list of authors</a> for the explanation “SelectionSort”,<br> " +
-                    "<a href = 'https://commons.wikimedia.org/wiki/File:Insertion-sort.svg' > Insertion-sort.svg</a> by MrDrBob under <a href = 'https://creativecommons.org/licenses/by-sa/3.0/'> CC BY-SA 3.0</a> for the explanation “InserionSort”,<br> " +
+                    "<a href = 'https://commons.wikimedia.org/wiki/File:Insertion-sort.svg' > Insertion-sort.svg</a> by MrDrBob under <a href = 'https://creativecommons.org/licenses/by-sa/3.0/'> CC BY-SA 3.0</a> for the explanation “InsertionSort”,<br> " +
                     "<a href = 'https://www.geeksforgeeks.org/merge-sort/' > Merge Sort</a> from GeeksforGeeks under <a href = 'https://creativecommons.org/licenses/by-sa/4.0/'> CC BY-SA 4.0</a> (edited and translated) for the explanation “MergeSort”,<br> " +
                     "<a href = 'https://de.wikibooks.org/wiki/Algorithmen_und_Datenstrukturen_in_C/_Mergesort' > Algorithmen und Datenstrukturen in C/ Mergesort</a> from Wikibooks under <a href = 'https://creativecommons.org/licenses/by-sa/3.0/'> CC BY-SA 3.0</a> (edited and translated) - <a href = 'https://de.wikibooks.org/w/index.php?title=Algorithmen_und_Datenstrukturen_in_C/_Mergesort&action=history'>  list of authors</a> for the explanation “MergeSort”,<br> " +
                     "<a href = 'https://commons.wikimedia.org/wiki/File:Merge_sort_algorithm_diagram.svg' > Merge sort algorithm diagram.svg</a> by VineetKumar under <a href = 'https://creativecommons.org/publicdomain/zero/1.0/deed.de'> Public Domain</a> for the explanation “MergeSort”,<br> " +
@@ -468,11 +468,10 @@ public class MainWindow extends JFrame
                     "<br>" +
 
 
-                    "<a href='https://www.geeksforgeeks.org/bubble-sort/'>Java program for implementation of Bubble Sort</a> by Rajat Mishra under <a href='https://creativecommons.org/licenses/by-sa/4.0/'>CC BY-SA 4.0</a> (edited and translated) for the explainatory text “What is sorting?”\",<br> " +
                     "<a href='https://www.geeksforgeeks.org/bubble-sort/'>Java program for implementation of Bubble Sort</a> by Rajat Mishra under <a href='https://creativecommons.org/licenses/by-sa/4.0/'>CC BY-SA 4.0</a> (edited) for the code of the algorithm BubbleSort, <br> " +
                     "<a href='https://www.geeksforgeeks.org/selection-sort/'>Java program for implementation of Selection Sort</a> by Rajat Mishra under <a href='https://creativecommons.org/licenses/by-sa/4.0/'>CC BY-SA 4.0</a> (edited) for the code of the algorithm SelectionSort, <br> " +
                     "<a href='https://www.geeksforgeeks.org/insertion-sort/'>Java program for implementation of Insertion Sort</a> by Rajat Mishra under <a href='https://creativecommons.org/licenses/by-sa/4.0/'>CC BY-SA 4.0</a> (edited) for the code of the algorithm InsertionSort, <br> " +
-                    "<a href='https://www.geeksforgeeks.org/merge-sort/'>Java program for Merge Sort</a> by Rajat Mishra under <a href='https://creativecommons.org/licenses/by-sa/4.0/'>CC BY-SA 4.0</a> (bearbeitet) for the code of the algorithm MergeSort, <br> " +
+                    "<a href='https://www.geeksforgeeks.org/merge-sort/'>Java program for Merge Sort</a> by Rajat Mishra under <a href='https://creativecommons.org/licenses/by-sa/4.0/'>CC BY-SA 4.0</a> (edited) for the code of the algorithm MergeSort, <br> " +
                     "<a href='https://www.geeksforgeeks.org/quick-sort/'>Java program for implementation of QuickSort</a> by Rajat Mishra under <a href='https://creativecommons.org/licenses/by-sa/4.0/'>CC BY-SA 4.0</a> (edited) for the code of the algorithm QuickSort, <br>" +
                     "<a href='https://www.geeksforgeeks.org/bogosort-permutation-sort/'>Java Program to implement BogoSort</a> by Rahul Agrawal under <a href='https://creativecommons.org/licenses/by-sa/4.0/'>CC BY-SA 4.0</a> (edited) for the code of the algorithm BogoSort";
 
