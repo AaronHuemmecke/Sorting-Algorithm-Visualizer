@@ -11,7 +11,7 @@ The program currently supports the languages German and English.
 
 You can download the current version of the program as an executable JAR file in the [release section](https://github.com/AaronHuemmecke/Sorting-Algorithm-Visualizer/releases). Otherwise, you can clone the source code and [build a JAR file on your own](https://www.jetbrains.com/help/idea/packaging-a-module-into-a-jar-file.html).
 
-Please **feel free to contribute to this project**, for example by making use of a pull request.
+Please **feel free to contribute to this project**, for example by using of a pull request.
 
 
 
