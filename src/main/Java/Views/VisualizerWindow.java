@@ -1466,6 +1466,41 @@ public class VisualizerWindow {
         return colSelected;
     }
 
+    /**
+     * reset the VisualizationWindow
+     */
+    public void reset()
+    {
+            started = false;
+
+            pauseButton.setEnabled(false);
+            nextStepButton.setEnabled(false);
+            paused = false;
+            pauseButton.setText(bundle.getString("pause"));
+            visualizerPanel.setPause(false);
+            shuffleButton.setEnabled(true);
+            numberCountSelector.setEnabled(true);
+
+
+            algorithmSelector.setEnabled(true);
+
+            visualizerPanel.reset(false);
+
+            annotationWindow1.setVisible(false);
+            annotationWindow2.setVisible(false);
+
+
+            codeList1.setSelectedIndex(0);
+            codeList2.setSelectedIndex(0);
+
+            explainField.setText("");
+
+
+            startButton.setText(bundle.getString("start"));
+
+            visualizerPanel.repaint();
+    }
+
 
     /**
      * Method for switching the language of the elements

@@ -85,6 +85,11 @@ public class QuizWindow
     private VisualizerPanel visualizerPanel;
 
     /**
+     * ResourceBundle for the QuizWindow resources
+     */
+    ResourceBundle bundle = LanguageManager.getLanguageManagerInstance().getResourceBundle("QuizWindow");
+
+    /**
      * Constructor of QuizWindow
      * @param visualizerWindow ReferenceToTheWindow
      */
@@ -109,8 +114,6 @@ public class QuizWindow
             @Override
             public void actionPerformed(ActionEvent e)
             {
-                ResourceBundle bundle = LanguageManager.getLanguageManagerInstance().getResourceBundle("QuizWindow");
-
                 if (visualizationToBeStopped == false)
                 {
                     visualizationToBeStopped = true;
@@ -276,7 +279,31 @@ public class QuizWindow
                 }
             }
         });
-
-
     }
+
+    /**
+     * Reset the QuizWindow
+     */
+    public void reset()
+    {
+        visualizerPanel.reset(true);
+        visualizationToBeStopped = false;
+
+        algorithm1Button.setEnabled(true);
+        algorithm1Button.setBackground(new JButton().getBackground());
+        algorithm2Button.setEnabled(true);
+        algorithm2Button.setBackground(new JButton().getBackground());
+        algorithm3Button.setEnabled(true);
+        algorithm3Button.setBackground(new JButton().getBackground());
+        algorithm4Button.setEnabled(true);
+        algorithm4Button.setBackground(new JButton().getBackground());
+
+        algorithm1Button.setText(bundle.getString("algorithm1"));
+        algorithm2Button.setText(bundle.getString("algorithm2"));
+        algorithm3Button.setText(bundle.getString("algorithm3"));
+        algorithm4Button.setText(bundle.getString("algorithm4"));
+
+        start.setText(bundle.getString("start"));
+    }
+
 }

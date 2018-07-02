@@ -3,6 +3,8 @@ package main.Java.Views;
 import main.Java.Util.LanguageManager;
 
 import javax.swing.*;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
 import javax.swing.event.HyperlinkEvent;
 import javax.swing.event.HyperlinkListener;
 import java.awt.*;
@@ -119,6 +121,19 @@ public class MainWindow extends JFrame
         tabbedPane1.addTab(bundle.getString("explaination"), explanationWindow.getMainPanel());
         tabbedPane1.addTab(bundle.getString("algorithmVisualization"), visualizerWindow.getMainPanel());
         tabbedPane1.addTab(bundle.getString("algorithmQuiz"), quizWindow.getMainPanel());
+
+
+        tabbedPane1.getModel().addChangeListener(new ChangeListener() {
+            @Override
+            public void stateChanged(ChangeEvent e)
+            {
+                if(tabbedPane1.getSelectedIndex() == 2 || tabbedPane1.getSelectedIndex() == 3)
+                {
+                    visualizerWindow.reset();
+                    quizWindow.reset();
+                }
+            }
+        });
 
 
         welcomeText.putClientProperty(JEditorPane.HONOR_DISPLAY_PROPERTIES, Boolean.TRUE);
