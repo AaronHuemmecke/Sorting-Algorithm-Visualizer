@@ -1190,6 +1190,7 @@ public class VisualizerPanel extends JPanel
 
                     int j = i-1;
 
+                    if(!quiz)
                     visualizerWindow.updateVariable("j", i-1);
 
                     annotated1.add(j);
