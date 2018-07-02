@@ -3581,10 +3581,12 @@ public class VisualizerPanel extends JPanel
      * visualzation sleeps for a given amoount of time
      * @param delay time in milliseconds that the visualization sleeps
      */
-    public static void sleep(int delay)
+    public void sleep(int delay)
     {
         try
         {
+            this.revalidate();
+            this.repaint();
             Thread.sleep(delay);
         }
         catch (InterruptedException e)

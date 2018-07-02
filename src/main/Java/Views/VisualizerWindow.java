@@ -695,6 +695,7 @@ public class VisualizerWindow {
         });
 
 
+        // necessary for a GUI related bug
         codeList2.addListSelectionListener(new ListSelectionListener() {
             @Override
             public void valueChanged(ListSelectionEvent e) {
@@ -702,13 +703,14 @@ public class VisualizerWindow {
                 sortingPanel.revalidate();
                 sortingPanel.repaint();
 
-                codeList2.ensureIndexIsVisible(codeList2.getSelectedIndex());
-
                 sortingPanel.revalidate();
                 sortingPanel.repaint();
 
                 codeList2.repaint();
                 codeList2.revalidate();
+                visualizerPanel.repaint();
+                visualizerPanel.revalidate();
+
                 visualizerPanel.repaint();
                 visualizerPanel.revalidate();
 
@@ -720,6 +722,22 @@ public class VisualizerWindow {
 
                 sortingPanel.revalidate();
                 sortingPanel.repaint();
+
+                visualizerPanel.repaint();
+                visualizerPanel.revalidate();
+
+                annotationWindow1.repaint();
+                annotationWindow1.revalidate();
+                annotationWindow2.repaint();
+                annotationWindow2.revalidate();
+
+                performanceTable.revalidate();
+                performanceTable.repaint();
+
+                variableTable.revalidate();
+                variableTable.repaint();
+
+                codeList2.ensureIndexIsVisible(codeList2.getSelectedIndex());
             }
         });
 
