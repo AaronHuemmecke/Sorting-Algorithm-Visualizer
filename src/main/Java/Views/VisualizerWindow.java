@@ -715,6 +715,9 @@ public class VisualizerWindow {
                 performanceTable.revalidate();
                 performanceTable.repaint();
 
+                variableTable.revalidate();
+                variableTable.repaint();
+
                 sortingPanel.revalidate();
                 sortingPanel.repaint();
             }
@@ -1043,161 +1046,161 @@ public class VisualizerWindow {
      */
     private ListModel getCode(String sortingAlgorithm)
     {
-        DefaultListModel<String> pseudoCode = new DefaultListModel<>();
+        DefaultListModel<String> code = new DefaultListModel<>();
 
         switch(sortingAlgorithm)
         {
             case "BubbleSort":
             {
-                pseudoCode.addElement("for (int i = 1; i < randomNumbers.size(); i++)");
-                pseudoCode.addElement("{");
-                pseudoCode.addElement("   for (int j = 0; j < randomNumbers.size() - i; j++)");
-                pseudoCode.addElement("   {");
-                pseudoCode.addElement("       if (randomNumbers.get(j) > randomNumbers.get(j + 1)");
-                pseudoCode.addElement("           swap(j, j + 1);");
-                pseudoCode.addElement("    }");
-                pseudoCode.addElement("}");
+                code.addElement("for (int i = 1; i < randomNumbers.size(); i++)");
+                code.addElement("{");
+                code.addElement("   for (int j = 0; j < randomNumbers.size() - i; j++)");
+                code.addElement("   {");
+                code.addElement("       if (randomNumbers.get(j) > randomNumbers.get(j + 1)");
+                code.addElement("           swap(j, j + 1);");
+                code.addElement("    }");
+                code.addElement("}");
             } break;
 
             case "SelectionSort":
             {
-                pseudoCode.addElement("for (int i = 0; i < randomNumbers.size()-1; i++)");
-                pseudoCode.addElement("{");
-                pseudoCode.addElement("   int minIndex = i;");
-                pseudoCode.addElement("   for (int j = i+1; j < randomNumbers.size(); j++)");
-                pseudoCode.addElement("   {");
-                pseudoCode.addElement("       if (randomNumbers.get(j) < randomNumbers.get(minIndex)");
-                pseudoCode.addElement("           minIndex = j;");
-                pseudoCode.addElement("    }");
-                pseudoCode.addElement("    swap(minIndex,j);");
-                pseudoCode.addElement("}");
+                code.addElement("for (int i = 0; i < randomNumbers.size()-1; i++)");
+                code.addElement("{");
+                code.addElement("   int minIndex = i;");
+                code.addElement("   for (int j = i+1; j < randomNumbers.size(); j++)");
+                code.addElement("   {");
+                code.addElement("       if (randomNumbers.get(j) < randomNumbers.get(minIndex)");
+                code.addElement("           minIndex = j;");
+                code.addElement("    }");
+                code.addElement("    swap(minIndex,j);");
+                code.addElement("}");
             } break;
 
             case "InsertionSort":
             {
-                pseudoCode.addElement("for (int i = 1; i < randomNumbers.size(); i++)");
-                pseudoCode.addElement("{");
-                pseudoCode.addElement("   int key = randomNumbers.get(i);");
-                pseudoCode.addElement("   int j = i - 1;");
-                pseudoCode.addElement("   while (j >= 0 && randomNumbers.get(j) > key)");
-                pseudoCode.addElement("   {");
-                pseudoCode.addElement("       randomNumbers.set(j+1, randomNumbers.get(j))");
-                pseudoCode.addElement("       j = j - 1;");
-                pseudoCode.addElement("    }");
-                pseudoCode.addElement("    randomNumbers.set(j+1, key);");
-                pseudoCode.addElement("}");
+                code.addElement("for (int i = 1; i < randomNumbers.size(); i++)");
+                code.addElement("{");
+                code.addElement("   int key = randomNumbers.get(i);");
+                code.addElement("   int j = i - 1;");
+                code.addElement("   while (j >= 0 && randomNumbers.get(j) > key)");
+                code.addElement("   {");
+                code.addElement("       randomNumbers.set(j+1, randomNumbers.get(j))");
+                code.addElement("       j = j - 1;");
+                code.addElement("    }");
+                code.addElement("    randomNumbers.set(j+1, key);");
+                code.addElement("}");
             } break;
 
             case "MergeSort1":
             {
-                pseudoCode.addElement("void sort(int l, int r)");
-                pseudoCode.addElement("{");
+                code.addElement("void sort(int l, int r)");
+                code.addElement("{");
 
-                pseudoCode.addElement("   {");
-                pseudoCode.addElement("       if (l < r)");
-                pseudoCode.addElement("       {");
-                pseudoCode.addElement("            int m = (l + r) / 2;");
-                pseudoCode.addElement("            sort(l, m);");
-                pseudoCode.addElement("            sort(m+1, r);");
-                pseudoCode.addElement("            merge(l, m, r);");
-                pseudoCode.addElement("       }");
-                pseudoCode.addElement("    }");
-                pseudoCode.addElement("}");
+                code.addElement("   {");
+                code.addElement("       if (l < r)");
+                code.addElement("       {");
+                code.addElement("            int m = (l + r) / 2;");
+                code.addElement("            sort(l, m);");
+                code.addElement("            sort(m+1, r);");
+                code.addElement("            merge(l, m, r);");
+                code.addElement("       }");
+                code.addElement("    }");
+                code.addElement("}");
             } break;
 
 
             case "MergeSort2":
             {
-                pseudoCode.addElement("int merge(int l, int m, int r))");
-                pseudoCode.addElement("{");
-                pseudoCode.addElement("   int n1 = m - l + 1;");
-                pseudoCode.addElement("   int n2 = r - m;");
-                pseudoCode.addElement("   ArrayList<Integer> L = new ArrayList<Integer>(n1);");
-                pseudoCode.addElement("   ArrayList<Integer> R = new ArrayList<Integer>(n2);");
-                pseudoCode.addElement("   for(int index1=0; index1<n1; ++index1)");
-                pseudoCode.addElement("        L.add(index1) = randomNumbers.get(l + index1);");
-                pseudoCode.addElement("   for(int index2=0; index2<n2; ++j)");
-                pseudoCode.addElement("        R.add(index2) = randomNumbers.get(m + 1 + index2);");
-                pseudoCode.addElement("   int i = 0;");
-                pseudoCode.addElement("   int j = 0;");
-                pseudoCode.addElement("   int k = l;");
-                pseudoCode.addElement("   while(i < n1 && j < n2)");
-                pseudoCode.addElement("   {");
-                pseudoCode.addElement("       if (L.get(i) <= R.get(j))");
-                pseudoCode.addElement("       {");
-                pseudoCode.addElement("            randomNumbers.set(k, L.get(i));");
-                pseudoCode.addElement("            i++;");
-                pseudoCode.addElement("       }");
-                pseudoCode.addElement("       else");
-                pseudoCode.addElement("       {");
-                pseudoCode.addElement("            randomNumbers.set(k, R.get(j));");
-                pseudoCode.addElement("            j++;");
-                pseudoCode.addElement("       }");
-                pseudoCode.addElement("       k++;");
-                pseudoCode.addElement("    }");
-                pseudoCode.addElement("   while(i < n1)");
-                pseudoCode.addElement("   {");
-                pseudoCode.addElement("       randomNumbers.set(k, L.get(i);");
-                pseudoCode.addElement("       i++;");
-                pseudoCode.addElement("       k++;");
-                pseudoCode.addElement("   }");
-                pseudoCode.addElement("   while(j < n2)");
-                pseudoCode.addElement("   {");
-                pseudoCode.addElement("       randomNumbers.set(k, R.get(j);");
-                pseudoCode.addElement("       j++;");
-                pseudoCode.addElement("       k++;");
-                pseudoCode.addElement("   }");
-                pseudoCode.addElement("}");
+                code.addElement("int merge(int l, int m, int r))");
+                code.addElement("{");
+                code.addElement("   int n1 = m - l + 1;");
+                code.addElement("   int n2 = r - m;");
+                code.addElement("   ArrayList<Integer> L = new ArrayList<Integer>(n1);");
+                code.addElement("   ArrayList<Integer> R = new ArrayList<Integer>(n2);");
+                code.addElement("   for(int index1=0; index1<n1; ++index1)");
+                code.addElement("        L.add(index1) = randomNumbers.get(l + index1);");
+                code.addElement("   for(int index2=0; index2<n2; ++j)");
+                code.addElement("        R.add(index2) = randomNumbers.get(m + 1 + index2);");
+                code.addElement("   int i = 0;");
+                code.addElement("   int j = 0;");
+                code.addElement("   int k = l;");
+                code.addElement("   while(i < n1 && j < n2)");
+                code.addElement("   {");
+                code.addElement("       if (L.get(i) <= R.get(j))");
+                code.addElement("       {");
+                code.addElement("            randomNumbers.set(k, L.get(i));");
+                code.addElement("            i++;");
+                code.addElement("       }");
+                code.addElement("       else");
+                code.addElement("       {");
+                code.addElement("            randomNumbers.set(k, R.get(j));");
+                code.addElement("            j++;");
+                code.addElement("       }");
+                code.addElement("       k++;");
+                code.addElement("    }");
+                code.addElement("   while(i < n1)");
+                code.addElement("   {");
+                code.addElement("       randomNumbers.set(k, L.get(i);");
+                code.addElement("       i++;");
+                code.addElement("       k++;");
+                code.addElement("   }");
+                code.addElement("   while(j < n2)");
+                code.addElement("   {");
+                code.addElement("       randomNumbers.set(k, R.get(j);");
+                code.addElement("       j++;");
+                code.addElement("       k++;");
+                code.addElement("   }");
+                code.addElement("}");
             } break;
 
             case "QuickSort1":
             {
-                pseudoCode.addElement("void sort(int low, int high)");
-                pseudoCode.addElement("{");
-                pseudoCode.addElement("   if (low < high)");
-                pseudoCode.addElement("   {");
-                pseudoCode.addElement("       int pi = partition(randomNumbers, low, high);");
-                pseudoCode.addElement("       sort(randomNumbers, low, pi-1);");
-                pseudoCode.addElement("       sort(randomNumbers, pi+1, high);");
-                pseudoCode.addElement("    }");
-                pseudoCode.addElement("}");
+                code.addElement("void sort(int low, int high)");
+                code.addElement("{");
+                code.addElement("   if (low < high)");
+                code.addElement("   {");
+                code.addElement("       int pi = partition(randomNumbers, low, high);");
+                code.addElement("       sort(randomNumbers, low, pi-1);");
+                code.addElement("       sort(randomNumbers, pi+1, high);");
+                code.addElement("    }");
+                code.addElement("}");
             } break;
 
             case "QuickSort2":
             {
-                pseudoCode.addElement("int partition(int low, int high))");
-                pseudoCode.addElement("{");
-                pseudoCode.addElement("   int pivot = randomNumbers.get(high);");
-                pseudoCode.addElement("   int i = low - 1;");
-                pseudoCode.addElement("   for(int j=low; j<= high-1; j++)");
-                pseudoCode.addElement("   {");
-                pseudoCode.addElement("       if (randomNumbers.get(j) <= pivot)");
-                pseudoCode.addElement("       {");
-                pseudoCode.addElement("            i++;");
-                pseudoCode.addElement("            swap(i,j);");
-                pseudoCode.addElement("       }");
-                pseudoCode.addElement("   }");
-                pseudoCode.addElement("    swap(i+1,high);");
-                pseudoCode.addElement("    return(i+1);");
-                pseudoCode.addElement("}");
+                code.addElement("int partition(int low, int high))");
+                code.addElement("{");
+                code.addElement("   int pivot = randomNumbers.get(high);");
+                code.addElement("   int i = low - 1;");
+                code.addElement("   for(int j=low; j<= high-1; j++)");
+                code.addElement("   {");
+                code.addElement("       if (randomNumbers.get(j) <= pivot)");
+                code.addElement("       {");
+                code.addElement("            i++;");
+                code.addElement("            swap(i,j);");
+                code.addElement("       }");
+                code.addElement("   }");
+                code.addElement("    swap(i+1,high);");
+                code.addElement("    return(i+1);");
+                code.addElement("}");
             } break;
 
 
             case "BogoSort":
             {
-                pseudoCode.addElement("while (isSorted() == false)");
-                pseudoCode.addElement("   randomSwap()");
+                code.addElement("while (isSorted() == false)");
+                code.addElement("   randomSwap()");
             } break;
         }
 
-        return pseudoCode;
+        return code;
     }
 
     /**
      * sets the selected index of the first codeList
      * @param index index to be selected
      */
-    public void setPseudoCodeIndex1(int index)
+    public void setCodeIndex1(int index)
     {
         if(index == -1)
             codeList1.clearSelection();
@@ -1209,7 +1212,7 @@ public class VisualizerWindow {
      * sets the selected index of the second codeList
      * @param index index to be selected
      */
-    public void setPseudoCodeIndex2(int index)
+    public void setCodeIndex2(int index)
     {
         if(index == -1)
             codeList2.clearSelection();

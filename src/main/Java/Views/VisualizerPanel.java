@@ -484,7 +484,7 @@ public class VisualizerPanel extends JPanel
 
                         if (i == 1)
                         {
-                            visualizerWindow.setPseudoCodeIndex1(0);
+                            visualizerWindow.setCodeIndex1(0);
 
                             if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                                 visualizerWindow.setExplainField("Setze i auf 1");
@@ -498,7 +498,7 @@ public class VisualizerPanel extends JPanel
                         }
                         else
                         {
-                            visualizerWindow.setPseudoCodeIndex1(2);
+                            visualizerWindow.setCodeIndex1(2);
 
                             if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                                 visualizerWindow.setExplainField("j hat die rechte Grenze erreicht.");
@@ -508,7 +508,7 @@ public class VisualizerPanel extends JPanel
                             checkPause();
                             sleep(animationDelay);
 
-                            visualizerWindow.setPseudoCodeIndex1(0);
+                            visualizerWindow.setCodeIndex1(0);
                             visualizerWindow.resetVariableValue(1);
 
                             if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
@@ -529,7 +529,7 @@ public class VisualizerPanel extends JPanel
                         {
                                 if (j == 0)
                                 {
-                                    visualizerWindow.setPseudoCodeIndex1(2);
+                                    visualizerWindow.setCodeIndex1(2);
 
                                     if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                                         visualizerWindow.setExplainField("Setze j auf 0");
@@ -544,7 +544,7 @@ public class VisualizerPanel extends JPanel
                                 }
                                 else
                                 {
-                                    visualizerWindow.setPseudoCodeIndex1(2);
+                                    visualizerWindow.setCodeIndex1(2);
 
                                     if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                                         visualizerWindow.setExplainField("Erhöhe j um 1");
@@ -575,7 +575,7 @@ public class VisualizerPanel extends JPanel
                                     selected.add(j+1);
                                     repaint();
 
-                                    visualizerWindow.setPseudoCodeIndex1(4);
+                                    visualizerWindow.setCodeIndex1(4);
 
                                     if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                                         visualizerWindow.setExplainField("Prüfe, ob " + randomNumbers.get(j) + " größer als " + randomNumbers.get(j+1) + " ist");
@@ -613,7 +613,7 @@ public class VisualizerPanel extends JPanel
                                     {
                                         repaint();
                                         sleep(animationDelay);
-                                        visualizerWindow.setPseudoCodeIndex1(5);
+                                        visualizerWindow.setCodeIndex1(5);
 
                                         if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                                             visualizerWindow.setExplainField("Also tausche " + randomNumbers.get(j) + " und " + randomNumbers.get(j + 1));
@@ -708,7 +708,7 @@ public class VisualizerPanel extends JPanel
 
                             if (!quiz)
                             {
-                                visualizerWindow.setPseudoCodeIndex1(0);
+                                visualizerWindow.setCodeIndex1(0);
 
                                 if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                                     visualizerWindow.setExplainField("Setze i auf 0");
@@ -735,7 +735,7 @@ public class VisualizerPanel extends JPanel
 
                             if (!quiz)
                             {
-                                visualizerWindow.setPseudoCodeIndex1(0);
+                                visualizerWindow.setCodeIndex1(0);
 
                                 if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                                     visualizerWindow.setExplainField("Erhöhe i um 1");
@@ -762,7 +762,7 @@ public class VisualizerPanel extends JPanel
 
                     if (!quiz)
                     {
-                        visualizerWindow.setPseudoCodeIndex1(2);
+                        visualizerWindow.setCodeIndex1(2);
 
                         if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                             visualizerWindow.setExplainField("Setze den Index des Minimums auf i = " + i);
@@ -796,7 +796,7 @@ public class VisualizerPanel extends JPanel
 
                     if (!quiz)
                     {
-                        visualizerWindow.setPseudoCodeIndex1(3);
+                        visualizerWindow.setCodeIndex1(3);
                         if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                             visualizerWindow.setExplainField("Setze j auf i+1 = " + (i+1));
                         if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.ENGLISH.toString()))
@@ -815,7 +815,7 @@ public class VisualizerPanel extends JPanel
 
                         if (!quiz)
                         {
-                            visualizerWindow.setPseudoCodeIndex1(3);
+                            visualizerWindow.setCodeIndex1(3);
                             if (j > i + 1)
                             {
                                 if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
@@ -843,7 +843,7 @@ public class VisualizerPanel extends JPanel
 
                         if (!quiz)
                         {
-                            visualizerWindow.setPseudoCodeIndex1(5);
+                            visualizerWindow.setCodeIndex1(5);
 
                             if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                                 visualizerWindow.setExplainField("Prüfe, ob " + randomNumbers.get(j) + " kleiner als das aktuelle Minimum " + randomNumbers.get(minIndex) + " ist");
@@ -893,7 +893,7 @@ public class VisualizerPanel extends JPanel
 
                             if (!quiz)
                             {
-                                visualizerWindow.setPseudoCodeIndex1(6);
+                                visualizerWindow.setCodeIndex1(6);
 
                                 if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                                     visualizerWindow.setExplainField("Also setze " + j + " als neuer Index des Minimums");
@@ -943,7 +943,7 @@ public class VisualizerPanel extends JPanel
 
 
                     if (!quiz) {
-                        visualizerWindow.setPseudoCodeIndex1(3);
+                        visualizerWindow.setCodeIndex1(3);
 
                         if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                             visualizerWindow.setExplainField("Alle Zahlen sind geprüft worden");
@@ -971,7 +971,7 @@ public class VisualizerPanel extends JPanel
 
                     if (!quiz)
                     {
-                        visualizerWindow.setPseudoCodeIndex1(8);
+                        visualizerWindow.setCodeIndex1(8);
 
                         if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                             visualizerWindow.setExplainField("Tausche das Minimum " + randomNumbers.get(minIndex) + " mit der Zahl am Index i: " + randomNumbers.get(i));
@@ -1069,7 +1069,7 @@ public class VisualizerPanel extends JPanel
                 sleep(animationDelay);
 
 
-                visualizerWindow.setPseudoCodeIndex1(0);
+                visualizerWindow.setCodeIndex1(0);
                 if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                     visualizerWindow.setExplainField("Setze i auf 1. Die erste Zahl wird als sortiert angenommen");
                 if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.ENGLISH.toString()))
@@ -1090,7 +1090,7 @@ public class VisualizerPanel extends JPanel
 
                     if (i > 1)
                     {
-                        visualizerWindow.setPseudoCodeIndex1(0);
+                        visualizerWindow.setCodeIndex1(0);
 
                         annotated1.clear();
                         annotations1.clear();
@@ -1132,7 +1132,7 @@ public class VisualizerPanel extends JPanel
                     annotated1.add(i);
                     annotations1.add(new Pair(i,"i"));
 
-                    visualizerWindow.setPseudoCodeIndex1(2);
+                    visualizerWindow.setCodeIndex1(2);
                     if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                         visualizerWindow.setExplainField("Speichere " + randomNumbers.get(i) + " als Zahl, die links einsortiert werden soll, unter der Variable key");
                     if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.ENGLISH.toString()))
@@ -1182,7 +1182,7 @@ public class VisualizerPanel extends JPanel
 
 
 
-                    visualizerWindow.setPseudoCodeIndex1(3);
+                    visualizerWindow.setCodeIndex1(3);
                     if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                         visualizerWindow.setExplainField("Setze j als den Index links neben i");
                     if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.ENGLISH.toString()))
@@ -1212,12 +1212,12 @@ public class VisualizerPanel extends JPanel
                     sleep(animationDelay);
 
 
-                    visualizerWindow.setPseudoCodeIndex1(4);
+                    visualizerWindow.setCodeIndex1(4);
 
 
                     if (randomNumbers.get(j) <= key)
                     {
-                        visualizerWindow.setPseudoCodeIndex1(4);
+                        visualizerWindow.setCodeIndex1(4);
                         if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                             visualizerWindow.setExplainField("Die einzufügende Zahl ist größer oder gleich " + randomNumbers.get(j));
                         if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.ENGLISH.toString()))
@@ -1272,7 +1272,7 @@ public class VisualizerPanel extends JPanel
 
 
 
-                            visualizerWindow.setPseudoCodeIndex1(4);
+                            visualizerWindow.setCodeIndex1(4);
 
                             if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                                 visualizerWindow.setExplainField("j ist größer gleich 0 und " + randomNumbers.get(j) + " ist größer als die einzufügende Zahl " + key);
@@ -1310,7 +1310,7 @@ public class VisualizerPanel extends JPanel
 
 
 
-                        visualizerWindow.setPseudoCodeIndex1(6);
+                        visualizerWindow.setCodeIndex1(6);
                         if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                             visualizerWindow.setExplainField("Kopiere " + randomNumbers.get(j) + " auf die Position rechts daneben");
                         if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.ENGLISH.toString()))
@@ -1330,7 +1330,7 @@ public class VisualizerPanel extends JPanel
                             visualizerWindow.setCountAccesses(accessCount);
 
 
-                        visualizerWindow.setPseudoCodeIndex1(7);
+                        visualizerWindow.setCodeIndex1(7);
                         if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                             visualizerWindow.setExplainField("Reduziere j um 1");
                         if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.ENGLISH.toString()))
@@ -1380,7 +1380,7 @@ public class VisualizerPanel extends JPanel
 
                         if (j < 0)
                         {
-                            visualizerWindow.setPseudoCodeIndex1(4);
+                            visualizerWindow.setCodeIndex1(4);
                             if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                                 visualizerWindow.setExplainField("j ist kleiner als 0. Also beende die Schleife");
                             if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.ENGLISH.toString()))
@@ -1395,7 +1395,7 @@ public class VisualizerPanel extends JPanel
 
                         else if (randomNumbers.get(j) <= key)
                         {
-                            visualizerWindow.setPseudoCodeIndex1(4);
+                            visualizerWindow.setCodeIndex1(4);
                             if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                                 visualizerWindow.setExplainField("Die einzufügende Zahl ist größer oder gleich " + randomNumbers.get(j));
                             if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.ENGLISH.toString()))
@@ -1410,7 +1410,7 @@ public class VisualizerPanel extends JPanel
 
 
 
-                    visualizerWindow.setPseudoCodeIndex1(9);
+                    visualizerWindow.setCodeIndex1(9);
                     if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                         visualizerWindow.setExplainField("Setze die einzufügende Zahl " + key + " an die Stelle j+1");
                     if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.ENGLISH.toString()))
@@ -1523,7 +1523,7 @@ public class VisualizerPanel extends JPanel
      */
     void mergeSortFunction(int l, int r, boolean quiz)
     {
-        visualizerWindow.setPseudoCodeIndex1(0);
+        visualizerWindow.setCodeIndex1(0);
 
         if (l == 0 && r == randomNumbers.size()-1)
         {
@@ -1555,7 +1555,7 @@ public class VisualizerPanel extends JPanel
 
 
 
-        visualizerWindow.setPseudoCodeIndex1(3);
+        visualizerWindow.setCodeIndex1(3);
 
 
 
@@ -1606,7 +1606,7 @@ public class VisualizerPanel extends JPanel
             repaint();
 
 
-            visualizerWindow.setPseudoCodeIndex1(5);
+            visualizerWindow.setCodeIndex1(5);
 
             if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                 visualizerWindow.setExplainField("Berechne m als Mitte der aktuellen linken und rechten Grenze. Diese Mitte wird eingesetzt, um die Zahlen (weiter) zu unterteilen");
@@ -1629,7 +1629,7 @@ public class VisualizerPanel extends JPanel
             sleep(animationDelay);
             repaint();
 
-            visualizerWindow.setPseudoCodeIndex1(6);
+            visualizerWindow.setCodeIndex1(6);
 
             if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                 visualizerWindow.setExplainField("Rufe die Methode sort rekrusiv auf dem linken Teil der Zahlen auf");
@@ -1652,7 +1652,7 @@ public class VisualizerPanel extends JPanel
             visualizerWindow.updateVariable("r",r);
             visualizerWindow.updateVariable("m",m);
 
-            visualizerWindow.setPseudoCodeIndex2(-1);
+            visualizerWindow.setCodeIndex2(-1);
 
 
 
@@ -1677,7 +1677,7 @@ public class VisualizerPanel extends JPanel
             if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.ENGLISH.toString()))
                 visualizerWindow.setExplainField("Call the method sort recursively on the right part of the numbers");
 
-            visualizerWindow.setPseudoCodeIndex1(7);
+            visualizerWindow.setCodeIndex1(7);
 
 
             annotated2.add(m+1);
@@ -1704,7 +1704,7 @@ public class VisualizerPanel extends JPanel
             visualizerWindow.updateVariable("r",r);
             visualizerWindow.updateVariable("m",m);
 
-            visualizerWindow.setPseudoCodeIndex2(-1);
+            visualizerWindow.setCodeIndex2(-1);
 
             annotated1.clear();
             annotations1.clear();
@@ -1717,7 +1717,7 @@ public class VisualizerPanel extends JPanel
             annotations2.add(new Pair<>(r,"r"));
             annotated2.add(m);
 
-            visualizerWindow.setPseudoCodeIndex1(8);
+            visualizerWindow.setCodeIndex1(8);
 
             if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                 visualizerWindow.setExplainField("Sortiere die Zahlen innerhalb der aktuellen Grenzen. Rufe dafür die Methode merge mit den Parametern l= " + l + ", m=" + m + " und r=" + r + " auf");
@@ -1728,7 +1728,7 @@ public class VisualizerPanel extends JPanel
 
 
 
-            visualizerWindow.setPseudoCodeIndex2(0);
+            visualizerWindow.setCodeIndex2(0);
 
             if (l == m)
                 annotations2.add(new Pair<>(m,"l=m"));
@@ -1762,7 +1762,7 @@ public class VisualizerPanel extends JPanel
             if(! quiz)
             annotationWindow1.repaint();
 
-            visualizerWindow.setPseudoCodeIndex2(0);
+            visualizerWindow.setCodeIndex2(0);
         }
     }
 
@@ -1785,7 +1785,7 @@ public class VisualizerPanel extends JPanel
         if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.ENGLISH.toString()))
             visualizerWindow.setExplainField("Calculate the size of the left set of numbers that is sorted together with the right set of numbers");
 
-        visualizerWindow.setPseudoCodeIndex2(2);
+        visualizerWindow.setCodeIndex2(2);
 
 
 
@@ -1804,7 +1804,7 @@ public class VisualizerPanel extends JPanel
             visualizerWindow.setExplainField("Calculate the size of the right set of numbers that is sorted together with the left set of numbers");
 
 
-        visualizerWindow.setPseudoCodeIndex2(3);
+        visualizerWindow.setCodeIndex2(3);
 
         int n2 = r - m;
 
@@ -1824,7 +1824,7 @@ public class VisualizerPanel extends JPanel
 
 
 
-        visualizerWindow.setPseudoCodeIndex2(4);
+        visualizerWindow.setCodeIndex2(4);
 
 
 
@@ -1850,7 +1850,7 @@ public class VisualizerPanel extends JPanel
             visualizerWindow.setExplainField("Initialize the array for the right set of numbers");
 
 
-        visualizerWindow.setPseudoCodeIndex2(5);
+        visualizerWindow.setCodeIndex2(5);
 
         ArrayList<Integer> R = new ArrayList<Integer>(n1);
 
@@ -1865,7 +1865,7 @@ public class VisualizerPanel extends JPanel
 
 
 
-        visualizerWindow.setPseudoCodeIndex2(6);
+        visualizerWindow.setCodeIndex2(6);
 
         if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
             visualizerWindow.setExplainField("Kopiere die linke Zahlenmenge in den linken Behälter");
@@ -1884,7 +1884,7 @@ public class VisualizerPanel extends JPanel
         /*Copy data to temp arrays*/
         for (int index1=0; index1<n1; index1++)
         {
-            visualizerWindow.setPseudoCodeIndex2(7);
+            visualizerWindow.setCodeIndex2(7);
 
             if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                 visualizerWindow.setExplainField("Füge die Zahl " + randomNumbers.get(l + index1) + " in den linken Behälter ein");
@@ -1941,7 +1941,7 @@ public class VisualizerPanel extends JPanel
 
             if(index1+1<n1)
             {
-                visualizerWindow.setPseudoCodeIndex2(6);
+                visualizerWindow.setCodeIndex2(6);
 
                 if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                     visualizerWindow.setExplainField("index1 ist noch kleiner als die Größe der linken Zahlenmenge. Kopiere deswegen auch die nächste Zahl");
@@ -1954,7 +1954,7 @@ public class VisualizerPanel extends JPanel
             }
             else
             {
-                visualizerWindow.setPseudoCodeIndex2(6);
+                visualizerWindow.setCodeIndex2(6);
 
                 if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                     visualizerWindow.setExplainField("index1 ist jetzt genauso groß wie die Größe der linken Zahlenmenge. Es wurden folglich alle Zahlen kopiert");
@@ -1968,7 +1968,7 @@ public class VisualizerPanel extends JPanel
         sleep(animationDelay);
         repaint();
 
-        visualizerWindow.setPseudoCodeIndex2(8);
+        visualizerWindow.setCodeIndex2(8);
 
         if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
             visualizerWindow.setExplainField("Kopiere die rechte Zahlenmenge in den rechten Behälter");
@@ -1985,7 +1985,7 @@ public class VisualizerPanel extends JPanel
 
         for (int index2=0; index2<n2; index2++)
         {
-            visualizerWindow.setPseudoCodeIndex2(9);
+            visualizerWindow.setCodeIndex2(9);
 
 
             if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
@@ -2020,7 +2020,7 @@ public class VisualizerPanel extends JPanel
 
             if(index2+1<n2)
             {
-                visualizerWindow.setPseudoCodeIndex2(8);
+                visualizerWindow.setCodeIndex2(8);
 
 
                 if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
@@ -2034,7 +2034,7 @@ public class VisualizerPanel extends JPanel
             }
             else
             {
-                visualizerWindow.setPseudoCodeIndex2(8);
+                visualizerWindow.setCodeIndex2(8);
 
 
                 if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
@@ -2053,7 +2053,7 @@ public class VisualizerPanel extends JPanel
 
         // Initial indexes of first and second subarrays
 
-        visualizerWindow.setPseudoCodeIndex2(10);
+        visualizerWindow.setCodeIndex2(10);
 
         if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
             visualizerWindow.setExplainField("Initiere i als Laufindex des Behälters der linken Zahlenmenge");
@@ -2080,7 +2080,7 @@ public class VisualizerPanel extends JPanel
 
 
 
-        visualizerWindow.setPseudoCodeIndex2(11);
+        visualizerWindow.setCodeIndex2(11);
 
         if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
             visualizerWindow.setExplainField("Initiere j als Laufindex des Behälters der rechten Zahlenmenge");
@@ -2104,7 +2104,7 @@ public class VisualizerPanel extends JPanel
         sleep(animationDelay);
         repaint();
 
-        visualizerWindow.setPseudoCodeIndex2(12);
+        visualizerWindow.setCodeIndex2(12);
 
         if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
             visualizerWindow.setExplainField("Initiere k als Anfangsindex der aktuellen durch die Grenzen l und r definierten Zahlenmenge. Dieser Index wird genutzt, um die Zahlen der linken und rechten Teilmenge nun in der richtigen Reihenfolge einzufügen");
@@ -2117,7 +2117,7 @@ public class VisualizerPanel extends JPanel
         sleep(animationDelay);
         repaint();
 
-        // Initial index of merged subarry array
+        // Initial index of merged subarray
         int k = l;
 
         visualizerWindow.updateVariable("k",k);
@@ -2131,7 +2131,7 @@ public class VisualizerPanel extends JPanel
         sleep(animationDelay);
         repaint();
 
-        visualizerWindow.setPseudoCodeIndex2(13);
+        visualizerWindow.setCodeIndex2(13);
 
         if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
             visualizerWindow.setExplainField("Füge solange Zahlen der beiden Zahlenmengen-Behälter in der richtigen Reihenfolge ein, bis entweder alle Zahlen der linken oder alle Zahlen der rechten Zahlenmengen-Behälter vollständig eingefügt worden sind");
@@ -2157,7 +2157,7 @@ public class VisualizerPanel extends JPanel
 
                 if(i != 0 || j != 0)
                 {
-                    visualizerWindow.setPseudoCodeIndex2(13);
+                    visualizerWindow.setCodeIndex2(13);
 
                     if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                         visualizerWindow.setExplainField("Keine der beiden Behälter der Zahlenmengen wurde bislang vollständig durchlaufen. Setze die Schleife also fort");
@@ -2173,7 +2173,7 @@ public class VisualizerPanel extends JPanel
                 }
 
 
-                visualizerWindow.setPseudoCodeIndex2(15);
+                visualizerWindow.setCodeIndex2(15);
 
                 if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                     visualizerWindow.setExplainField("Die aktuell ausgewählte Zahl des Behälters der linken Zahlenmenge (" + L.get(i) + ") ist kleiner als oder genauso groß wie die aktuell ausgewählte Zahl des Behälters der rechten Zahlenmenge (" + R.get(j) + ").");
@@ -2187,7 +2187,7 @@ public class VisualizerPanel extends JPanel
                 sleep(animationDelay);
                 repaint();
 
-                visualizerWindow.setPseudoCodeIndex2(17);
+                visualizerWindow.setCodeIndex2(17);
 
                 if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                     visualizerWindow.setExplainField("Füge also " + L.get(i) + " an die Position des aktuellen Laufindex der gesamten Zahlenmenge ein");
@@ -2207,7 +2207,7 @@ public class VisualizerPanel extends JPanel
 
 
 
-                visualizerWindow.setPseudoCodeIndex2(18);
+                visualizerWindow.setCodeIndex2(18);
 
                 if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                     visualizerWindow.setExplainField("Erhöhe den Laufindex des Behälters der linken Zahlenmenge um 1");
@@ -2250,7 +2250,7 @@ public class VisualizerPanel extends JPanel
             {
                 if(i != 0 || j != 0)
                 {
-                    visualizerWindow.setPseudoCodeIndex2(13);
+                    visualizerWindow.setCodeIndex2(13);
 
 
                     if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
@@ -2265,7 +2265,7 @@ public class VisualizerPanel extends JPanel
                 }
 
 
-                visualizerWindow.setPseudoCodeIndex2(15);
+                visualizerWindow.setCodeIndex2(15);
 
                 if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                     visualizerWindow.setExplainField("Die aktuell ausgewählte Zahl des Behälters der linken Zahlenmenge (" + L.get(i) + ") ist größer als die aktuell ausgewählte Zahl des Behälters der rechten Zahlenmenge (" + R.get(j) + ").");
@@ -2277,7 +2277,7 @@ public class VisualizerPanel extends JPanel
                 sleep(animationDelay);
                 repaint();
 
-                visualizerWindow.setPseudoCodeIndex2(22);
+                visualizerWindow.setCodeIndex2(22);
 
                 if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                     visualizerWindow.setExplainField("Füge also " +  R.get(j) + " an die Position des aktuellen Laufindex der gesamten Zahlenmenge ein");
@@ -2296,7 +2296,7 @@ public class VisualizerPanel extends JPanel
                 visualizerWindow.setCountAccesses(accessCount);
 
 
-                visualizerWindow.setPseudoCodeIndex2(23);
+                visualizerWindow.setCodeIndex2(23);
 
                 if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                     visualizerWindow.setExplainField("Erhöhe den Laufindex des Behälters der rechten Zahlenmenge um 1");
@@ -2335,7 +2335,7 @@ public class VisualizerPanel extends JPanel
             }
 
 
-            visualizerWindow.setPseudoCodeIndex2(25);
+            visualizerWindow.setCodeIndex2(25);
 
 
             if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
@@ -2384,7 +2384,7 @@ public class VisualizerPanel extends JPanel
 
         if(i >= n1)
         {
-            visualizerWindow.setPseudoCodeIndex2(13);
+            visualizerWindow.setCodeIndex2(13);
 
 
             if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
@@ -2400,7 +2400,7 @@ public class VisualizerPanel extends JPanel
         }
         else if( j >= n2)
         {
-            visualizerWindow.setPseudoCodeIndex2(13);
+            visualizerWindow.setCodeIndex2(13);
 
             if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                 visualizerWindow.setExplainField("Der Laufindex des Behälters der rechten Zahlenmenge ist vollständig durchgelaufen, also wurden alle Zahlen des Behälters der rechten Zahlenmenge eingefügt. Beende deswegen die Schleife");
@@ -2417,7 +2417,7 @@ public class VisualizerPanel extends JPanel
 
 
 
-        visualizerWindow.setPseudoCodeIndex2(27);
+        visualizerWindow.setCodeIndex2(27);
 
         if (i >= n1)
         {
@@ -2445,7 +2445,7 @@ public class VisualizerPanel extends JPanel
 
         while (i < n1)
         {
-            visualizerWindow.setPseudoCodeIndex2(29);
+            visualizerWindow.setCodeIndex2(29);
 
             if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                 visualizerWindow.setExplainField("Füge die Zahl " + L.get(i) + " an die Position des aktuellen Laufindex der gesamten Zahlenmenge ein");
@@ -2460,11 +2460,11 @@ public class VisualizerPanel extends JPanel
             randomNumbers.set(k, L.get(i));
 
             accessCount++;
-            visualizerWindow.setCountComparisons(accessCount);
+            visualizerWindow.setCountAccesses(accessCount);
 
 
 
-            visualizerWindow.setPseudoCodeIndex2(30);
+            visualizerWindow.setCodeIndex2(30);
 
             if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                 visualizerWindow.setExplainField("Erhöhe den Laufindex des Behälters der linken Zahlenmenge um 1");
@@ -2501,7 +2501,7 @@ public class VisualizerPanel extends JPanel
             repaint();
 
 
-            visualizerWindow.setPseudoCodeIndex2(30);
+            visualizerWindow.setCodeIndex2(30);
 
             if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                 visualizerWindow.setExplainField("Erhöhe den Laufindex gesamten Zahlenmenge um 1");
@@ -2535,7 +2535,7 @@ public class VisualizerPanel extends JPanel
 
             if(i >= n1)
             {
-                visualizerWindow.setPseudoCodeIndex2(27);
+                visualizerWindow.setCodeIndex2(27);
 
                 if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                     visualizerWindow.setExplainField("Alle Zahlen des Behälters der linken Zahlenmenge wurden eingeordnet. Diese Schleife wird also beendet");
@@ -2548,7 +2548,7 @@ public class VisualizerPanel extends JPanel
             }
             else
             {
-                visualizerWindow.setPseudoCodeIndex2(27);
+                visualizerWindow.setCodeIndex2(27);
 
                 if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                     visualizerWindow.setExplainField("Es wurden noch nicht alle Zahlen des Behälters der linken Zahlenmenge eingeordnet. Die Schleife wird also fortgesetzt");
@@ -2566,7 +2566,7 @@ public class VisualizerPanel extends JPanel
         repaint();
 
 
-        visualizerWindow.setPseudoCodeIndex2(33);
+        visualizerWindow.setCodeIndex2(33);
 
         if (j >= n2)
         {
@@ -2593,7 +2593,7 @@ public class VisualizerPanel extends JPanel
         /* Copy remaining elements of R[] if any */
         while (j < n2)
         {
-            visualizerWindow.setPseudoCodeIndex2(35);
+            visualizerWindow.setCodeIndex2(35);
 
             if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                 visualizerWindow.setExplainField("Füge die Zahl " + R.get(j) + " an die Position des aktuellen Laufindex der gesamten Zahlenmenge ein");
@@ -2609,9 +2609,9 @@ public class VisualizerPanel extends JPanel
             randomNumbers.set(k, R.get(j));
 
             accessCount++;
-            visualizerWindow.setCountComparisons(accessCount);
+            visualizerWindow.setCountAccesses(accessCount);
 
-            visualizerWindow.setPseudoCodeIndex2(36);
+            visualizerWindow.setCodeIndex2(36);
 
 
             if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
@@ -2650,7 +2650,7 @@ public class VisualizerPanel extends JPanel
             repaint();
 
 
-            visualizerWindow.setPseudoCodeIndex2(37);
+            visualizerWindow.setCodeIndex2(37);
 
 
             if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
@@ -2686,7 +2686,7 @@ public class VisualizerPanel extends JPanel
 
             if(j >= n2)
             {
-                visualizerWindow.setPseudoCodeIndex2(33);
+                visualizerWindow.setCodeIndex2(33);
 
                 if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                     visualizerWindow.setExplainField("Alle Zahlen des Behälters der rechten Zahlenmenge wurden eingeordnet. Diese Schleife wird also beendet");
@@ -2699,7 +2699,7 @@ public class VisualizerPanel extends JPanel
             }
             else
             {
-                visualizerWindow.setPseudoCodeIndex2(33);
+                visualizerWindow.setCodeIndex2(33);
 
 
                 if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
@@ -2719,7 +2719,7 @@ public class VisualizerPanel extends JPanel
 
 
 
-        visualizerWindow.setPseudoCodeIndex2(39);
+        visualizerWindow.setCodeIndex2(39);
 
 
         if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
@@ -2824,7 +2824,7 @@ public class VisualizerPanel extends JPanel
         annotated2.clear();
         annotations2.clear();
 
-        visualizerWindow.setPseudoCodeIndex1(0);
+        visualizerWindow.setCodeIndex1(0);
 
         if (low == 0 && high == randomNumbers.size()-1)
         {
@@ -2870,7 +2870,7 @@ public class VisualizerPanel extends JPanel
 
 
 
-        visualizerWindow.setPseudoCodeIndex1(2);
+        visualizerWindow.setCodeIndex1(2);
         if (low < high)
         {
             if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
@@ -2903,8 +2903,8 @@ public class VisualizerPanel extends JPanel
         /* pi is partitioning index, arr[p] is now
            at right place */
 
-            visualizerWindow.setPseudoCodeIndex1(4);
-            visualizerWindow.setPseudoCodeIndex2(0);
+            visualizerWindow.setCodeIndex1(4);
+            visualizerWindow.setCodeIndex2(0);
 
 
             if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
@@ -2946,8 +2946,8 @@ public class VisualizerPanel extends JPanel
             // partition and after partition
 
 
-            visualizerWindow.setPseudoCodeIndex2(-1);
-            visualizerWindow.setPseudoCodeIndex1(5);
+            visualizerWindow.setCodeIndex2(-1);
+            visualizerWindow.setCodeIndex1(5);
 
 
             annotated1.add(pi-1);
@@ -2998,7 +2998,7 @@ public class VisualizerPanel extends JPanel
             sleep(animationDelay);
             repaint();
 
-            visualizerWindow.setPseudoCodeIndex1(6);
+            visualizerWindow.setCodeIndex1(6);
 
             annotated1.add(pi+1);
             annotations1.add(new Pair<Integer, String>(pi+1,"pi+1"));
@@ -3024,7 +3024,7 @@ public class VisualizerPanel extends JPanel
 
         if(low == 0 && high == randomNumbers.size()-1)
         {
-            visualizerWindow.setPseudoCodeIndex1(8);
+            visualizerWindow.setCodeIndex1(8);
 
             if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                 visualizerWindow.setExplainField("Die Zahlen sind jetzt komplett sortiert");
@@ -3043,7 +3043,7 @@ public class VisualizerPanel extends JPanel
      */
     int partition (int low, int high)
     {
-        visualizerWindow.setPseudoCodeIndex2(2);
+        visualizerWindow.setCodeIndex2(2);
 
         if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
             visualizerWindow.setExplainField("Speichere die Zahl beim Index high als Pivot-Wert. Anhand dieser Referenzzahl werden im Folgenden Zahlen getauscht");
@@ -3088,7 +3088,7 @@ public class VisualizerPanel extends JPanel
         sleep(animationDelay);
         repaint();
 
-        visualizerWindow.setPseudoCodeIndex2(3);
+        visualizerWindow.setCodeIndex2(3);
 
         if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
             visualizerWindow.setExplainField("Speichere i als Index links neben low. Alle Zahlen, die sich zwischen Index  i (inklusiv) und low befinden, sollen kleiner oder genauso groß wie der Pivot-Wert sein und alle Zahlen, die sich zwischen i (exklusiv) und high befinden, sollen größer sein als der Pivot-Wert.");
@@ -3111,7 +3111,7 @@ public class VisualizerPanel extends JPanel
         annotations1.add(new Pair<>(i, "i"));
 
 
-        visualizerWindow.setPseudoCodeIndex2(4);
+        visualizerWindow.setCodeIndex2(4);
 
         if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
             visualizerWindow.setExplainField("Gehe alle Zahlen von low bis high-1 durch");
@@ -3131,7 +3131,7 @@ public class VisualizerPanel extends JPanel
 
             if(j != low)
             {
-                visualizerWindow.setPseudoCodeIndex2(4);
+                visualizerWindow.setCodeIndex2(4);
 
                 if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                     visualizerWindow.setExplainField("Erhöhe j um 1");
@@ -3170,7 +3170,7 @@ public class VisualizerPanel extends JPanel
             annotated1.add(i);
             annotations1.add(new Pair<>(i, "i"));
 
-            visualizerWindow.setPseudoCodeIndex2(6);
+            visualizerWindow.setCodeIndex2(6);
 
             if(randomNumbers.get(j) <= pivot)
             {
@@ -3200,7 +3200,7 @@ public class VisualizerPanel extends JPanel
             // equal to pivot
             if (randomNumbers.get(j) <= pivot)
             {
-                visualizerWindow.setPseudoCodeIndex2(8);
+                visualizerWindow.setCodeIndex2(8);
 
                 if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                     visualizerWindow.setExplainField("Erhöhe i deswegen um 1.");
@@ -3229,7 +3229,7 @@ public class VisualizerPanel extends JPanel
                     annotations1.add(new Pair<>(i, "i"));
 
 
-                visualizerWindow.setPseudoCodeIndex2(9);
+                visualizerWindow.setCodeIndex2(9);
 
 
                 if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
@@ -3249,7 +3249,7 @@ public class VisualizerPanel extends JPanel
 
             if(j+1 > high- 1)
             {
-                visualizerWindow.setPseudoCodeIndex2(4);
+                visualizerWindow.setCodeIndex2(4);
 
 
                 annotated1.clear();
@@ -3306,7 +3306,7 @@ public class VisualizerPanel extends JPanel
 
 
 
-        visualizerWindow.setPseudoCodeIndex2(12);
+        visualizerWindow.setCodeIndex2(12);
 
         if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
             visualizerWindow.setExplainField("Vertausche den Pivot-Wert mit dem Wert am Index i+1. Dadurch wird gewährleistet, dass alle Zahlen links vom Pivot-Wert kleiner gleich und alle Zahlen rechts vom Pivot-Wert größer als der Pivot-Wert sind");
@@ -3328,7 +3328,7 @@ public class VisualizerPanel extends JPanel
 
 
 
-        visualizerWindow.setPseudoCodeIndex2(13);
+        visualizerWindow.setCodeIndex2(13);
 
 
         if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
@@ -3382,7 +3382,7 @@ public class VisualizerPanel extends JPanel
             {
                 while(true)
                 {
-                    visualizerWindow.setPseudoCodeIndex1(0);
+                    visualizerWindow.setCodeIndex1(0);
 
                     selected.clear();
                     repaint();
@@ -3469,7 +3469,7 @@ public class VisualizerPanel extends JPanel
                     selected.clear();
                     repaint();
 
-                    visualizerWindow.setPseudoCodeIndex1(1);
+                    visualizerWindow.setCodeIndex1(1);
                     repaint();
 
 
@@ -3640,8 +3640,8 @@ public class VisualizerPanel extends JPanel
 
             visualizerWindow.setExplainField("");
 
-            visualizerWindow.setPseudoCodeIndex1(-1);
-            visualizerWindow.setPseudoCodeIndex2(-1);
+            visualizerWindow.setCodeIndex1(-1);
+            visualizerWindow.setCodeIndex2(-1);
 
 
             visualizerWindow.resetVariableValuesAndPerformanceIndicators();

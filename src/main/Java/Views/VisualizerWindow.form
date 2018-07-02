@@ -262,7 +262,7 @@
                 <properties>
                   <autoResizeMode value="4"/>
                   <fillsViewportHeight value="false"/>
-                  <preferredScrollableViewportSize width="200" height="165"/>
+                  <preferredScrollableViewportSize width="200" height="200"/>
                   <showHorizontalLines value="true"/>
                   <showVerticalLines value="true"/>
                 </properties>
@@ -291,7 +291,7 @@
                 <constraints/>
                 <properties>
                   <autoResizeMode value="4"/>
-                  <preferredScrollableViewportSize width="200" height="165"/>
+                  <preferredScrollableViewportSize width="200" height="200"/>
                 </properties>
               </component>
             </children>
