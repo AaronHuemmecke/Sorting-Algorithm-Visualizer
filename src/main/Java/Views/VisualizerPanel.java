@@ -3585,8 +3585,6 @@ public class VisualizerPanel extends JPanel
     {
         try
         {
-            this.revalidate();
-            this.repaint();
             Thread.sleep(delay);
         }
         catch (InterruptedException e)
