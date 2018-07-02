@@ -526,6 +526,9 @@ public class VisualizerWindow {
                         variableTableModel.addRow(tempRow1);
                         variableTableModel.addRow(tempRow2);
 
+                        variableScrollPane.setMinimumSize(new Dimension(200,40));
+                        variableScrollPane.setMaximumSize(new Dimension(200,40));
+
                    //     codeList1.setFont(new Font(Font.DIALOG, 0, 15));
                      //   explainField.setFont(new Font(Font.DIALOG, 0, 15));
 
@@ -551,6 +554,9 @@ public class VisualizerWindow {
                         variableTableModel.addRow(tempRow2);
                         variableTableModel.addRow(tempRow3);
 
+                        variableScrollPane.setMinimumSize(new Dimension(200,83));
+                        variableScrollPane.setMaximumSize(new Dimension(200,83));
+
                       //  codeList1.setFont(new Font(Font.DIALOG, 0, 15));
                       //  explainField.setFont(new Font(Font.DIALOG, 0, 15));
 
@@ -575,6 +581,9 @@ public class VisualizerWindow {
                         variableTableModel.addRow(tempRow1);
                         variableTableModel.addRow(tempRow2);
                         variableTableModel.addRow(tempRow3);
+
+                        variableScrollPane.setMinimumSize(new Dimension(200,83));
+                        variableScrollPane.setMaximumSize(new Dimension(200,83));
 
                    //     codeList1.setFont(new Font(Font.DIALOG, 0, 15));
                     //    explainField.setFont(new Font(Font.DIALOG, 0, 15));
@@ -616,6 +625,8 @@ public class VisualizerWindow {
                         variableTableModel.addRow(tempRow9);
                         variableTableModel.addRow(tempRow10);
 
+                        variableScrollPane.setMinimumSize(new Dimension(200,223));
+                        variableScrollPane.setMaximumSize(new Dimension(200,223));
 
 
                    //     codeList1.setFont(new Font(Font.DIALOG, 0, 11));
@@ -655,6 +666,9 @@ public class VisualizerWindow {
                         variableTableModel.addRow(tempRow5);
                         variableTableModel.addRow(tempRow6);
 
+                        variableScrollPane.setMinimumSize(new Dimension(200,143));
+                        variableScrollPane.setMaximumSize(new Dimension(200,143));
+
                     //    codeList1.setFont(new Font(Font.DIALOG, 0, 12));
                     //    explainField.setFont(new Font(Font.DIALOG, 0, 12));
 
@@ -685,6 +699,9 @@ public class VisualizerWindow {
                         codeList2ScrollPane.repaint();
                         codeList1ScrollPane.revalidate();
                         codeList1ScrollPane.repaint();
+
+                        variableScrollPane.setMinimumSize(new Dimension(200,83));
+                        variableScrollPane.setMaximumSize(new Dimension(200,83));
 
 
                         codePanel.revalidate();

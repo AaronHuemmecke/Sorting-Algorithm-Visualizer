@@ -252,7 +252,7 @@
           </grid>
           <scrollpane id="2e63b" binding="variableScrollPane">
             <constraints>
-              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="10" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties/>
             <border type="none"/>
@@ -262,7 +262,7 @@
                 <properties>
                   <autoResizeMode value="4"/>
                   <fillsViewportHeight value="false"/>
-                  <preferredScrollableViewportSize width="200" height="200"/>
+                  <preferredScrollableViewportSize width="200" height="40"/>
                   <showHorizontalLines value="true"/>
                   <showVerticalLines value="true"/>
                 </properties>
@@ -282,7 +282,7 @@
           </component>
           <scrollpane id="bd637" binding="performanceScrollPane">
             <constraints>
-              <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="7" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+              <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="7" anchor="10" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties/>
             <border type="none"/>
@@ -291,7 +291,7 @@
                 <constraints/>
                 <properties>
                   <autoResizeMode value="4"/>
-                  <preferredScrollableViewportSize width="200" height="200"/>
+                  <preferredScrollableViewportSize width="200" height="60"/>
                 </properties>
               </component>
             </children>
@@ -316,7 +316,7 @@
               <component id="a988c" class="javax.swing.JTable" binding="recordTable">
                 <constraints/>
                 <properties>
-                  <preferredScrollableViewportSize width="450" height="200"/>
+                  <preferredScrollableViewportSize width="450" height="180"/>
                 </properties>
               </component>
             </children>
