@@ -1332,95 +1332,104 @@ public class VisualizerWindow {
         {
             case 0:
             {
-                switch (variable)
+                if(variableTableModel.getRowCount() == 2)
                 {
-                    case "i": variableTableModel.setValueAt(value, 0, 1); break;
+                    switch (variable)
+                    {
+                        case "i": variableTableModel.setValueAt(value, 0, 1); break;
 
-                    case "j": variableTableModel.setValueAt(value, 1, 1); break;
+                        case "j": variableTableModel.setValueAt(value, 1, 1); break;
+                    }
                 }
 
             } break;
 
             case 1:
             {
-                switch (variable)
+                if(variableTableModel.getRowCount() == 3)
                 {
-                    case "i": variableTableModel.setValueAt(value, 0, 1); break;
+                    switch (variable)
+                    {
+                        case "i": variableTableModel.setValueAt(value, 0, 1); break;
 
-                    case "j": variableTableModel.setValueAt(value, 1, 1); break;
+                        case "j": variableTableModel.setValueAt(value, 1, 1); break;
 
-                    case "minIndex": variableTableModel.setValueAt(value, 2, 1); break;
+                        case "minIndex": variableTableModel.setValueAt(value, 2, 1); break;
+                    }
                 }
 
             } break;
 
             case 2:
             {
-                switch (variable)
+                if(variableTableModel.getRowCount() == 3)
                 {
-                    case "i": variableTableModel.setValueAt(value, 0, 1); break;
+                    switch (variable)
+                    {
+                        case "i": variableTableModel.setValueAt(value, 0, 1); break;
 
-                    case "j": variableTableModel.setValueAt(value, 1, 1); break;
+                        case "j": variableTableModel.setValueAt(value, 1, 1); break;
 
-                    case "key": variableTableModel.setValueAt(value, 2, 1); break;
+                        case "key": variableTableModel.setValueAt(value, 2, 1); break;
+                    }
                 }
 
             } break;
 
             case 3:
             {
-                switch (variable)
+                if(variableTableModel.getRowCount() == 10)
                 {
-                    case "l": variableTableModel.setValueAt(value, 0, 1); break;
+                    switch (variable)
+                    {
+                        case "l": variableTableModel.setValueAt(value, 0, 1); break;
 
-                    case "r": variableTableModel.setValueAt(value, 1, 1); break;
+                        case "r": variableTableModel.setValueAt(value, 1, 1); break;
 
-                    case "m": variableTableModel.setValueAt(value, 2, 1); break;
+                        case "m": variableTableModel.setValueAt(value, 2, 1); break;
 
-                    case "n1": variableTableModel.setValueAt(value, 3, 1); break;
+                        case "n1": variableTableModel.setValueAt(value, 3, 1); break;
 
-                    case "n2": variableTableModel.setValueAt(value, 4, 1); break;
+                        case "n2": variableTableModel.setValueAt(value, 4, 1); break;
 
-                    case "index1": variableTableModel.setValueAt(value, 5, 1); break;
+                        case "index1": variableTableModel.setValueAt(value, 5, 1); break;
 
-                    case "index2": variableTableModel.setValueAt(value, 6, 1); break;
+                        case "index2": variableTableModel.setValueAt(value, 6, 1); break;
 
-                    case "i": variableTableModel.setValueAt(value, 7, 1); break;
+                        case "i": variableTableModel.setValueAt(value, 7, 1); break;
 
-                    case "j": variableTableModel.setValueAt(value, 8, 1); break;
+                        case "j": variableTableModel.setValueAt(value, 8, 1); break;
 
-                    case "k": variableTableModel.setValueAt(value, 9, 1); break;
+                        case "k": variableTableModel.setValueAt(value, 9, 1); break;
+                    }
                 }
 
             } break;
 
             case 4:
             {
-                switch (variable)
+                if(variableTableModel.getRowCount() == 6)
                 {
-                    case "low": variableTableModel.setValueAt(value, 0, 1); break;
+                    switch (variable)
+                    {
+                        case "low": variableTableModel.setValueAt(value, 0, 1); break;
 
-                    case "high": variableTableModel.setValueAt(value, 1, 1); break;
+                        case "high": variableTableModel.setValueAt(value, 1, 1); break;
 
-                    case "pi": variableTableModel.setValueAt(value, 2, 1); break;
+                        case "pi": variableTableModel.setValueAt(value, 2, 1); break;
 
-                    case "pivot": variableTableModel.setValueAt(value, 3, 1); break;
+                        case "pivot": variableTableModel.setValueAt(value, 3, 1); break;
 
-                    case "i": variableTableModel.setValueAt(value, 4, 1); break;
+                        case "i": variableTableModel.setValueAt(value, 4, 1); break;
 
-                    case "j": variableTableModel.setValueAt(value, 5, 1); break;
+                        case "j": variableTableModel.setValueAt(value, 5, 1); break;
+                    }
                 }
 
             } break;
 
             case 5:
             {
-                switch (variable)
-                {
-                    case "i": variableTableModel.setValueAt(value, 0, 1); break;
-
-                    case "j": variableTableModel.setValueAt(value, 1, 1); break;
-                }
 
             } break;
         }
