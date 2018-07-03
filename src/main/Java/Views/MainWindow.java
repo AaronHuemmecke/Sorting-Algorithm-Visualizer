@@ -176,7 +176,7 @@ public class MainWindow extends JFrame
             });
 
 
-        String authorInfo = "Dieses Programm “Sorting Algorithm Visualizer” ist von Aaron Hümmecke erstellt worden und ist unter der Creative-Commons-Lizenz" +
+        String authorInfo = "Dieses Programm “Sorting Algorithm Visualizer” ist von Aaron Hümmecke erstellt worden und ist unter der Creative Commons Lizenz" +
                 " <a href='https://creativecommons.org/licenses/by-sa/4.0/'>CC BY-SA 4.0</a> veröffentlicht.";
 
         licenseInfo.setText(authorInfo);
@@ -187,7 +187,7 @@ public class MainWindow extends JFrame
                 if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
                 {
 
-                    String authorInfo = "Dieses Programm “Sorting Algorithm Visualizer” ist von Aaron Hümmecke erstellt worden und ist unter der Creative-Commons-Lizenz" +
+                    String authorInfo = "Dieses Programm “Sorting Algorithm Visualizer” ist von Aaron Hümmecke erstellt worden und ist unter der Creative Commons Lizenz" +
                             " <a href='https://creativecommons.org/licenses/by-sa/4.0/'>CC BY-SA 4.0</a> veröffentlicht.";
 
                     String usedMaterial =  " <br> <br> Die folgenden Materialien wurden in diesem Programm verwendet:<br>" +
@@ -240,7 +240,7 @@ public class MainWindow extends JFrame
                 }
                 if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.ENGLISH.toString()))
                 {
-                    String authorInfo = "This program “Sorting Algorithm Visualizer” ist made by Aaron Hümmecke and published under the Creative-Commons licence" +
+                    String authorInfo = "This program “Sorting Algorithm Visualizer” ist made by Aaron Hümmecke and published under the Creative Commons licence" +
                             " <a href='https://creativecommons.org/licenses/by-sa/4.0/'>CC BY-SA 4.0</a>.";
 
                     String usedMaterial =  " <br> <br> The following materials have been used for this program:<br>" +
@@ -394,7 +394,7 @@ public class MainWindow extends JFrame
         if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
         {
 
-            String authorInfo = "Dieses Programm “Sorting Algorithm Visualizer” ist von Aaron Hümmecke erstellt worden und ist unter der Creative-Commons-Lizenz" +
+            String authorInfo = "Dieses Programm “Sorting Algorithm Visualizer” ist von Aaron Hümmecke erstellt worden und ist unter der Creative Commons Lizenz" +
                     " <a href='https://creativecommons.org/licenses/by-sa/4.0/'>CC BY-SA 4.0</a> veröffentlicht.";
 
             String usedMaterial =  " <br> <br> Die folgenden Materialien wurden in diesem Programm verwendet:<br>" +
@@ -447,7 +447,7 @@ public class MainWindow extends JFrame
         }
         if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.ENGLISH.toString()))
         {
-            String authorInfo = "This program “Sorting Algorithm Visualizer” ist made by Aaron Hümmecke and published under the Creative-Commons licence" +
+            String authorInfo = "This program “Sorting Algorithm Visualizer” ist made by Aaron Hümmecke and published under the Creative Commons licence" +
                     " <a href='https://creativecommons.org/licenses/by-sa/4.0/'>CC BY-SA 4.0</a>.";
 
             String usedMaterial =  " <br> <br> The following materials have been used for this program:<br>" +
