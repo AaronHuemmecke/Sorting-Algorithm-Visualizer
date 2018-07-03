@@ -2817,8 +2817,9 @@ public class VisualizerPanel extends JPanel
             annotationWindow1.repaint();
 
 
+        for (int i=0; i<6;i++)
+             visualizerWindow.resetVariableValue(i);
 
-        visualizerWindow.resetVariableValuesAndPerformanceIndicators();
         annotations1.clear();
         annotated1.clear();
         annotated2.clear();
