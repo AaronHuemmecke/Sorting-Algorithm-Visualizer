@@ -1453,6 +1453,7 @@ public class VisualizerWindow {
      */
     public void resetVariableValue(int index)
     {
+        if(variableTableModel.getRowCount()>index)
             variableTableModel.setValueAt("", index, 1);
     }
 
