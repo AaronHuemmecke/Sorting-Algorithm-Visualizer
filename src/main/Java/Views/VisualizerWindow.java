@@ -1448,7 +1448,7 @@ public class VisualizerWindow {
     }
 
     /**
-     * reset a varible value at a given index
+     * reset a variable value at a given index
      * @param index index of the variable that should be resetted
      */
     public void resetVariableValue(int index)
