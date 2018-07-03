@@ -15,6 +15,6 @@ Please **feel free to contribute to this project**, for example by using of a pu
 
 
 
-This program “Sorting Algorithm Visualizer” ist made by Aaron Hümmecke and published under the Creative-Commons licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en).
+This program “Sorting Algorithm Visualizer” ist made by Aaron Hümmecke and published under the Creative Commons licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en).
 
 Read the [Licence.md](https://github.com/AaronHuemmecke/Sorting-Algorithm-Visualizer/blob/master/Licence.md) for further information regarding used materials.
