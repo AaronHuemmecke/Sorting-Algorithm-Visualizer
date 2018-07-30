@@ -144,11 +144,11 @@ public class MainWindow extends JFrame
 
 
         welcomeText.setText("Willkommen zum Sorting Algorithm Visualizer. <br> <br>" +
-                "Dieses Programm dient dazu, Ihnen Sortieralgotithmen anschaulich und Schritt für Schritt zu erklären. <br> <br>" +
-                "Das Programm ist in drei verschiedene Abschnitte unterteilt, durch die Sie sich beliebig navigieren können: <br> <br>" +
+                "Dieses Programm dient dazu, Ihnen Sortieralgorithmen anschaulich und Schritt für Schritt zu erklären. <br> <br>" +
+                "Das Programm ist in drei verschiedene Abschnitte unterteilt, durch die Sie beliebig navigieren können: <br> <br>" +
                 "1. In dem Abschnitt <b>Erklärung</b> befinden sich Erklärungstexte zu den Grundlagen von Sortieralgorithmen. Außerdem werden einige Sortieralgorithmen textuell und anhand von Grafiken beschrieben. <br>" +
-                "2. In dem Abschnitt <b>Algorithmen-Visualisierung</b> bedindet sich ein Tool, mit welchem Sie verschiedene Sortieralgorithmen ausführen können und dabei eine grafische Visualisierung, Erklärungen und weitere Informationen erhalten. <br>" +
-                "3. In dem Abschnitt <b>Algorithmen-Quiz</b> können Sie testen, ob Sie Sortieralgorithmen anhand ihrer Visualisierung erkennen können und Sie somit das Prinzip der einzelnen Sortieralgorihmen verstanden haben. <br> <br>" +
+                "2. In dem Abschnitt <b>Algorithmen-Visualisierung</b> befindet sich ein Tool, mit welchem Sie verschiedene Sortieralgorithmen ausführen können und dabei eine grafische Visualisierung, Erklärungen und weitere Informationen erhalten. <br>" +
+                "3. In dem Abschnitt <b>Algorithmen-Quiz</b> können Sie testen, ob Sie Sortieralgorithmen anhand ihrer Visualisierung erkennen können und Sie somit das Prinzip der einzelnen Sortieralgorithmen verstanden haben. <br> <br>" +
                 "Das Programm unterstützt die Sprachen Deutsch und Englisch. Sie können die Sprache in der oberen linken Ecke auswählen. <br> <br>" +
                 "Unten befinden sich Lizenzinformationen, sowohl zur Lizenz dieses Programms selbst als auch zu den Lizenzen der verwendeten Materialien.");
 
@@ -240,7 +240,7 @@ public class MainWindow extends JFrame
                 }
                 if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.ENGLISH.toString()))
                 {
-                    String authorInfo = "This program “Sorting Algorithm Visualizer” ist made by Aaron Hümmecke and published under the Creative Commons licence" +
+                    String authorInfo = "This program “Sorting Algorithm Visualizer” is made by Aaron Hümmecke and published under the Creative Commons licence" +
                             " <a href='https://creativecommons.org/licenses/by-sa/4.0/'>CC BY-SA 4.0</a>.";
 
                     String usedMaterial =  " <br> <br> The following materials have been used for this program:<br>" +
@@ -274,8 +274,8 @@ public class MainWindow extends JFrame
                             "<a href = 'https://de.wikipedia.org/wiki/Sortierverfahren' > Sortierverfahren</a> from Wikipedia under <a href = 'https://creativecommons.org/licenses/by-sa/3.0/'> CC BY-SA 3.0</a> (edited and translated) - <a href = 'https://de.wikipedia.org/w/index.php?title=Sortierverfahren&action=history'>  list of authors</a> for the table  “Comparing Overview of Sorting Algorithms”,<br> " +
 
                             "<br>" +
-                            
-                            
+
+
                             "<a href='https://www.geeksforgeeks.org/bubble-sort/'>Java program for implementation of Bubble Sort</a> by Rajat Mishra under <a href='https://creativecommons.org/licenses/by-sa/4.0/'>CC BY-SA 4.0</a> (edited and translated) for the explainatory text “What is sorting?”\",<br> " +
                             "<a href='https://www.geeksforgeeks.org/bubble-sort/'>Java program for implementation of Bubble Sort</a> by Rajat Mishra under <a href='https://creativecommons.org/licenses/by-sa/4.0/'>CC BY-SA 4.0</a> (edited) for the code of the algorithm BubbleSort, <br> " +
                             "<a href='https://www.geeksforgeeks.org/selection-sort/'>Java program for implementation of Selection Sort</a> by Rajat Mishra under <a href='https://creativecommons.org/licenses/by-sa/4.0/'>CC BY-SA 4.0</a> (edited) for the code of the algorithm SelectionSort, <br> " +
@@ -357,11 +357,11 @@ public class MainWindow extends JFrame
         if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
         {
             welcomeText.setText("Willkommen zum Sorting Algorithm Visualizer. <br> <br>" +
-                    "Dieses Programm dient dazu, Ihnen Sortieralgotithmen anschaulich und Schritt für Schritt zu erklären. <br> <br>" +
-                    "Das Programm ist in drei verschiedene Abschnitte unterteilt, durch die Sie sich beliebig navigieren können: <br> <br>" +
+                    "Dieses Programm dient dazu, Ihnen Sortieralgorithmen anschaulich und Schritt für Schritt zu erklären. <br> <br>" +
+                    "Das Programm ist in drei verschiedene Abschnitte unterteilt, durch die Sie beliebig navigieren können: <br> <br>" +
                     "1. In dem Abschnitt <b>Erklärung</b> befinden sich Erklärungstexte zu den Grundlagen von Sortieralgorithmen. Außerdem werden einige Sortieralgorithmen textuell und anhand von Grafiken beschrieben. <br>" +
-                    "2. In dem Abschnitt <b>Algorithmen-Visualisierung</b> bedindet sich ein Tool, mit welchem Sie verschiedene Sortieralgorithmen ausführen können und dabei eine grafische Visualisierung, Erklärungen und weitere Informationen erhalten. <br>" +
-                    "3. In dem Abschnitt <b>Algorithmen-Quiz</b> können Sie testen, ob Sie Sortieralgorithmen anhand ihrer Visualisierung erkennen können und Sie somit das Prinzip der einzelnen Sortieralgorihmen verstanden haben. <br> <br>" +
+                    "2. In dem Abschnitt <b>Algorithmen-Visualisierung</b> befindet sich ein Tool, mit welchem Sie verschiedene Sortieralgorithmen ausführen können und dabei eine grafische Visualisierung, Erklärungen und weitere Informationen erhalten. <br>" +
+                    "3. In dem Abschnitt <b>Algorithmen-Quiz</b> können Sie testen, ob Sie Sortieralgorithmen anhand ihrer Visualisierung erkennen können und Sie somit das Prinzip der einzelnen Sortieralgorithmen verstanden haben. <br> <br>" +
                     "Das Programm unterstützt die Sprachen Deutsch und Englisch. Sie können die Sprache in der oberen linken Ecke auswählen. <br> <br>" +
                     "Unten befinden sich Lizenzinformationen, sowohl zur Lizenz dieses Programms selbst als auch zu den Lizenzen der verwendeten Materialien.");
         }
@@ -369,7 +369,7 @@ public class MainWindow extends JFrame
         {
             welcomeText.setText("Welcome to the Sorting Algorithm Visualizer. <br> <br>" +
                     "This program aims to explain sorting algorithms to you in a clear way step by step. <br> <br>" +
-                    "The program is divided into three different sections that you can freely navigate through: <br> <br>" +
+                    "The program is divided into three different sections that you can visit in any order: <br> <br>" +
                     "1. In the section <b>Explanation</b> there are explanatory texts regarding the basics of sorting algorithms. Moreover, some sorting algorithms are described textually and graphically.<br>" +
                     "2. In the section <b>Algorithm Visualization</b> there is a tool that you can use to execute different sorting algorithms and see a graphic visualization, explanations and further information at the same time. <br>" +
                     "3. In the section <b>Algorithm Quiz</b> you can check if you can recognize a sorting algorithm by its visualization and thereby test your understanding of the different sorting algorithms. <br> <br>" +
@@ -447,7 +447,7 @@ public class MainWindow extends JFrame
         }
         if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.ENGLISH.toString()))
         {
-            String authorInfo = "This program “Sorting Algorithm Visualizer” ist made by Aaron Hümmecke and published under the Creative Commons licence" +
+            String authorInfo = "This program “Sorting Algorithm Visualizer” is made by Aaron Hümmecke and published under the Creative Commons licence" +
                     " <a href='https://creativecommons.org/licenses/by-sa/4.0/'>CC BY-SA 4.0</a>.";
 
             String usedMaterial =  " <br> <br> The following materials have been used for this program:<br>" +

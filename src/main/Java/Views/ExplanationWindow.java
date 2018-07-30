@@ -458,10 +458,10 @@ public class ExplanationWindow extends JFrame
                     case 0:
                     {
                         text =  "Ein <b>Algorithmus</b> (auch Lösungsverfahren genannt) ist eine Handlungsvorschrift zur Lösung eines Problems" +
-                                " in endlich vielen Schritten. Diese Verarbeitunsgsvorschrift besteht aus einer endlichen Folge von eindeutig" +
-                                " ausführbaren Anweisungen, welche bei gleichen Voraussetzungen immer gleiche Ergebnise liefert. <br> <br>" +
-                                " Algortihmen weisen fünf typische Eigenschatften auf: <br> <br>" +
-                                "<b>Algemeingültigkeit:</b> Der Algorithmus löst eine Menge gleicher Probleme, einer ganzen Problemklasse. <br> <br>" +
+                                " in endlich vielen Schritten. Diese Verarbeitungsvorschrift besteht aus einer endlichen Folge von eindeutig" +
+                                " ausführbaren Anweisungen, welche bei gleichen Voraussetzungen immer gleiche Ergebnisse liefert. <br> <br>" +
+                                " Algorithmen weisen fünf typische Eigenschaften auf: <br> <br>" +
+                                "<b>Allgemeingültigkeit:</b> Der Algorithmus löst eine Menge gleicher Probleme, einer ganzen Problemklasse. <br> <br>" +
                                 "<b>Wiederholbarkeit:</b> Bei gleicher Voraussetzung liefert ein Algorithmus immer ein gleiches Ergebnis. <br> <br>" +
                                 "<b>Eindeutigkeit:</b> An jeder Stelle ist der nachfolgende Schritt eindeutig definiert. <br> <br>"+
                                 "<b>Endlichkeit:</b> Der Algorithmus besteht aus einer endlichen Anzahl von Schritten und kommt immer zu einem Ende. <br> <br>"+
@@ -471,13 +471,13 @@ public class ExplanationWindow extends JFrame
                     case 1:
                     {
                         text =  "An <b>Algorithm</b> (also called solution process) is an action regulation to solve a problem" +
-                                " in a finite amount of steps. This action regulation consists of a finite sequence of unambigiously" +
+                                " in a finite amount of steps. This action regulation consists of a finite sequence of unambiguously" +
                                 " executable instructions, which produces equal results under equal conditions. <br> <br>" +
                                 " There are five typical properties of algorithms: <br> <br>" +
                                 "<b>Universality:</b> The algorithm solves a set respectively class of equal problems. <br> <br>" +
-                                "<b>Repeatability:</b> Under equal conditions the algorithm always produces te equal result. <br><br>" +
+                                "<b>Repeatability:</b> Under equal conditions the algorithm always produces the same result. <br><br>" +
                                 "<b>Unambiguity:</b> At each point the subsequent step is unambiguously defined. <br> <br>"+
-                                "<b>Finiteness:</b> The algorithm consits if a finite amount of steps and always ends. <br> <br>"+
+                                "<b>Finiteness:</b> The algorithm consists of a finite amount of steps and always ends. <br> <br>"+
                                 "<b>Executability:</b> The instructions have to be clearly formulated and executable. <br> <br>";
 
                     } break;
@@ -496,7 +496,7 @@ public class ExplanationWindow extends JFrame
                                 "Eine notwendige Bedingung für die Sortierbarkeit ist eine <b>Ordnung</b> der Menge von Elementen. <br> " +
                                 "Beispielsweise können Zahlen durch ihre numerische Ordnung geordnet werden. <br>" +
                                 "Bei Buchstaben stellt die lexikographische Ordnung eine Möglichkeit zum Sortieren dar. <br>\n" +
-                                "Farben können widerum nicht einfach sortiert werden, da hier keine eindeutige Ordnung zwischen Farben vorliegt. <br> <br>" +
+                                "Farben können wiederum nicht einfach sortiert werden, da hier keine eindeutige Ordnung zwischen Farben vorliegt. <br> <br>" +
                                 "Für die Visualisierung von Sortieralgorithmen können Zahlen in Form von unterschiedlich hohen Säulen repräsentiert werden. <br> <br>" +
                                 "<img src="+   file + " height=400 width=1100></img>";
                     } break;
@@ -505,10 +505,10 @@ public class ExplanationWindow extends JFrame
                         String file = this.getClass().getResource("Sorting_algorithm.png").toString();
 
                         text = "A <b>Sorting Algorithm</b> is an algorithm for sorting a set of elements.<br><br> " +
-                                "A necessary condition for the sortibality is an <b>order</b> of the set of elements. <br> " +
+                                "A necessary condition for the sortability is an <b>order</b> of the set of elements. <br> " +
                                 "For instance, numbers can be sorted by their numeric order. <br>" +
                                 "Letters can be sorted by their lexicographic order. <br>\n" +
-                                "Colours, however, cannot be sorted easily as their is no clear order between colours. <br> <br>" +
+                                "Colours, however, cannot be sorted easily as there is no clear order between colours. <br> <br>" +
                                 "In order to visualize a sorting algorithm numbers can be represented by pillars with different heights. <br> <br>" +
                                 "<img src="+   file + " height=400 width=1100></img>";
                     } break;
@@ -522,28 +522,28 @@ public class ExplanationWindow extends JFrame
                     {
                         String file = this.getClass().getResource("BubbleSort.gif").toString();
 
-                        text = "Es wird grundsätzliches zwischen <b>vergleichsbasierten</b> und <b>nicht-vergleichsbasierten</b> Sortieralgorihmen unterschieden. <br>" +
-                                "Vergleichbasierte Sortieralgorithmen zeichnen sich dadurch aus, dass sie paarweise die einzelnen Elemente vergleichen. <br>" +
+                        text = "Es wird grundsätzliches zwischen <b>vergleichsbasierten</b> und <b>nicht-vergleichsbasierten</b> Sortieralgorithmen unterschieden. <br>" +
+                                "Vergleichsbasierte Sortieralgorithmen zeichnen sich dadurch aus, dass sie paarweise die einzelnen Elemente vergleichen. <br>" +
                                 "Nicht-vergleichsbasierte Sortieralgorithmen nutzen dagegen andere Mechanismen zum Sortieren. <br>" +
-                                "Die in diesem Programm integrierten Sortierlagorithmen <b>BubbleSort</b>, <b>SelectionSort</b>, <b>InsertionSort</b>, <b>MergeSort</b>, <b>Quicksort</b> und <b>BogoSort</b> sind <b>alle vergleichsbasiert</b>. <br> <br>" +
+                                "Die in diesem Programm integrierten Sortieralgorithmen <b>BubbleSort</b>, <b>SelectionSort</b>, <b>InsertionSort</b>, <b>MergeSort</b>, <b>Quicksort</b> und <b>BogoSort</b> sind <b>alle vergleichsbasiert</b>. <br> <br>" +
                                 "Zusätzlich dazu unterscheidet man <b>stabile</b> und <b>instabile</b> Sortieralgorithmen. <br>" +
                                 "Ein Sortieralgorithmus ist dann stabil, wenn die ursprüngliche Reihenfolge gleichwertiger Elemente auch nach der Sortierung erhalten bleibt.<br>" +
                                 "Bei instabilen Sortieralgorithmen kann diese ursprüngliche Reihenfolge verloren gehen <br> <br>" +
-                                "Außerdem wird unterschieden zwischen Soriteralgorithmen, die <b>in-place</b> arbeiten und Soriteralgorithmen, die <b>out-of-place</b> arbeiten<br>" +
+                                "Außerdem wird unterschieden zwischen Sortieralgorithmen, die <b>in-place</b> arbeiten und Sortieralgorithmen, die <b>out-of-place</b> arbeiten<br>" +
                                 "Wenn ein Algorithmus in-place arbeitet, benötigt er zusätzlich zu der Speicherung der zu sortierenden Elemente selbst nur einen konstanten, von der Eingabemenge unabhängigen Speicher.<br>" +
-                                "Wenn ein Algorithmus out-of-place arbeitet, wird dagegegen zusätzlicher Speicher benötigt, der abhängig von der Anzahl der Elemente ist.";
+                                "Wenn ein Algorithmus out-of-place arbeitet, wird dagegen zusätzlicher Speicher benötigt, der abhängig von der Anzahl der Elemente ist.";
                        //         + "<p style = \"text-align:right;\"> + <img class='alignright' src='"+   file + "'></img>"; // with='500', height='500'
                     } break;
                     case 1:
                     {
                         text = "Fundamentally, <b>comparison-based</b> and <b>not comparison-based</b> sorting algorithms can be differentiated. <br>" +
-                                "Comparison-based sorting algorithms are characterized by pairwise coimparsions of single elements. <br>" +
+                                "Comparison-based sorting algorithms are characterized by pairwise comparisons of single elements. <br>" +
                                 "In contrast, not comparison-based sorting algorithms make use of other mechanisms for sorting. <br>" +
-                                "The sorting algorithms Sortierlagorithmen <b>BubbleSort</b>, <b>SelectionSort</b>, <b>InsertionSort</b>, <b>MergeSort</b>, <b>Quicksort</b> and <b>BogoSort</b> which are included in this program are <b>all comparison-based</b>. <br> <br>" +
+                                "The sorting algorithms <b>BubbleSort</b>, <b>SelectionSort</b>, <b>InsertionSort</b>, <b>MergeSort</b>, <b>Quicksort</b> and <b>BogoSort</b>, which are included in this program, are <b>all comparison-based</b>. <br> <br>" +
                                 "Moreover,<b>stable</b> and <b>unstable</b> sorting algorithms are differentiated. <br>" +
                                 "A sorting algorithm is stable, if the original order of equivalent elements stays the same after sorting.<br>" +
-                                "When using an instable sorting algorithm this original order might get lost <br> <br>" +
-                                "Furthermore one sorting algorithms are distinguished, that work either <b>in-place</b> or <b>out-of-place</b> <br>" +
+                                "When using an unstable sorting algorithm this original order might get lost. <br> <br>" +
+                                "Furthermore, sorting algorithms are distinguished, that work either <b>in-place</b> or <b>out-of-place</b> <br>" +
                                 "An algorithm that works in-place only requires a constant amount of storage independent of the amount of elements in addition to the storage required for the elements itself.<br>" +
                                 "An algorithm that works out-of-place, however, requires an additional amount of storage dependent on the amount of elements.";
 
@@ -560,7 +560,7 @@ public class ExplanationWindow extends JFrame
 
                         text = "Die Effizienz eines Sortieralgorithmus wird durch zwei Eigenschaften quantifiziert: Die <b>Laufzeitkomplexität</b> und die <b>Speicherkomplexität</b>.<br><br>" +
                                 "Die <b>Laufzeitkomplexität</b> gibt an, wie schnell ein Algorithmus terminiert. " +
-                                "Zur Beschreibung der Laufzeit wird das Landau-Symbol O in der Informatik verwendet. Dies ist ein Maß für die Anzahl Schritte, die ein Algorithmus in Abhänigkeit der Eingabemenge benötigt. " +
+                                "Zur Beschreibung der Laufzeit wird das Landau-Symbol O in der Informatik verwendet. Dies ist ein Maß für die Anzahl Schritte, die ein Algorithmus in Abhängigkeit der Eingabemenge benötigt. " +
                                 "Der geringstmögliche Zeitaufwand entspricht O(1), also einer von der Eingabemenge unabhängigen Anzahl benötigter Schritte. Mit steigendem Aufwand beschreibt O(log n) einen logarithmischen, O(n) einen linearen, O(n log(n)) einen linearithmischen" +
                                 " und O(n^2) einen quadratischen Zusammenhang der Laufzeit mit der Eingabemenge. Es wird zudem neben dem durchschnittlichen Zeitaufwand noch zwischen dem Zeitaufwand des besten Fall und schlechtesten Falles unterschieden." +
                                 " So kann es zum Beispiel sein, dass ein Sortieralgorithmus unter idealen Bedingungen (zum Beispiel wenn die Zahlen schon vorsortiert sind) nur einen linearen Zeitaufwand benötigt, im Durchschnitt sowie im schlechtesten Fall" +
@@ -596,7 +596,7 @@ public class ExplanationWindow extends JFrame
                         text = "Bei <b>BubbleSort</b> wird die eingegebene Menge einmal komplett durchlaufen. Dabei werden immer die beiden benachbarten Elemente miteinander verglichen." +
                                 " Sollte das linke Element größer sein als das rechte, werden die beiden Elemente getauscht. Dies wird nun immer wieder wiederholt, bis der Algorithmus am Ende der Elemente angekommen ist." +
                                 " Nun startet der Algorithmus erneut bei dem vordersten Element und läuft durch die Eingabemenge. Das letzte Element aus dem vorherigen Durchgang muss dabei nicht mehr beachtet werden," +
-                                " da dies schon als größtes Element erkannt wurde, und somit richtigerweise ganz rechts steht. Dies wird nun solange wiederholt, bis die Eingabenmenge vollständig sortiert ist. <br><br>" +
+                                " da dies schon als größtes Element erkannt wurde, und somit richtigerweise ganz rechts steht. Dies wird nun solange wiederholt, bis die Eingabemenge vollständig sortiert ist. <br><br>" +
                                 " <b>Ablauf</b> <br><img src='"+   file + "'></img> <br> <br>" +
                                 "BubbleSort ist <b>stabil</b>, die Reihenfolge gleichwertiger Elemente ändert sich also nicht durch die Sortierung.<br> <br>" +
                                 "BubbleSort arbeitet zudem <b>in-place</b>, da der Algorithmus keinen zusätzlichen Speicher benötigt.<br><br>" +
@@ -609,9 +609,9 @@ public class ExplanationWindow extends JFrame
                         text = "At the beginning of <b>BubbleSort</b> all input elements are passed. During this pass, the two neighbouring elements are compared each time." +
                                 " If the left element is larger than the right element, the elements are swapped. This process is repeated until the algorithm reaches the end of the elements." +
                                 " After that the algorithm once again starts at the first element and passes through the elements. This time the last element of the previous pass can be ignored this time " +
-                                " as it is already recognized as the largest element and therefore placed on the right-most position. This process is reapeted until the input elements are entirely sorted. <br><br>" +
+                                " as it is already recognized as the largest element and therefore placed on the right-most position. This process is repeated until the input elements are entirely sorted. <br><br>" +
                                 " <b>Procedure</b> <br><img src='"+   file + "'></img> <br> <br>" +
-                                "BubbleSort is <b>stable</b>, therefore the original order of equivalent elements does not change through the sorting.<br> <br>" +
+                                "BubbleSort is <b>stable</b>, therefore the original order of equivalent elements remains unchanged.<br> <br>" +
                                 "Moreover, BubbleSort works <b>in-place</b>, as the algorithm does not require any additional space.<br><br>" +
                                 "In the best, average and worst case BubbleSort has a <b>time complexity of O(n^2)</b> for n input elements, as BubbleSort is implemented by two nested loops."; // with='500', height='500'
                     } break;
@@ -625,9 +625,9 @@ public class ExplanationWindow extends JFrame
                     {
                         String file = this.getClass().getResource("SelectionSort.gif").toString();
 
-                        text = "Bei <b>SelectionSort</b> wird die Menge zu Beginn komplett durchlaufen und dabei das kleinste Element gesucht und an den Anfang platziert. In der Folge teilt sich die Menge in einen bereits sortierten und einen noch unsoriterten Teil auf." +
+                        text = "Bei <b>SelectionSort</b> wird die Menge zu Beginn komplett durchlaufen und dabei das kleinste Element gesucht und an den Anfang platziert. In der Folge teilt sich die Menge in einen bereits sortierten und einen noch unsortierten Teil auf." +
                                 " In jedem nachfolgenden Durchlauf wird das kleinste Element der" +
-                                " verbleibenden, unsortierten Menge gesucht und an den sortierten Teil der Liste angehangen. Dadurch sind am Ende schließlich alle Elemente sortiert. <br><br>" +
+                                " verbleibenden, unsortierten Menge gesucht und an den sortierten Teil der Liste angehängt. Dadurch sind am Ende schließlich alle Elemente sortiert. <br><br>" +
                                 " <b>Ablauf</b> <br><img src='"+   file + "'></img> <br> <br>" +
                                 "SelectionSort ist  <b>nicht stabil</b>, die Reihenfolge gleichwertiger Elemente kann sich durch die Sortierung also ändern.<br> <br>" +
                                 "SelectionSort arbeitet <b>in-place</b>, da der Algorithmus keinen zusätzlichen Speicher benötigt.<br><br>" +
@@ -639,9 +639,9 @@ public class ExplanationWindow extends JFrame
 
                         text = "At the beginning of <b>SelectionSort</b> all input elements are passed. During this pass the smallest element is searched and placed at the beginning of the elements subsequently." +
                                 " In each following pass the smallest element of the" +
-                                " remaining, unsorted elements is searched und appended to the already sorted elements. By that, all elements are sorted at the end. <br><br>" +
+                                " remaining, unsorted elements is searched and appended to the already sorted elements. By that, all elements are sorted at the end. <br><br>" +
                                 " <b>Procedure</b> <br><img src='"+   file + "'></img> <br> <br>" +
-                                "SelectionSort is  <b>instable</b>, therefore the orgignal order of equivalent elements might get lost through the sorting.<br> <br>" +
+                                "SelectionSort is  <b>unstable</b>, therefore the original order of equivalent elements might get lost during sorting.<br> <br>" +
                                 "SelectionSort works <b>in-place</b>, as the algorithm does not require any additional space.<br><br>" +
                                 "In the best, average and worst case SelectionSort has a <b>time complexity of O(n^2)</b> for n input elements, as SelectionSort is implemented by two nested loops.";
 
@@ -670,9 +670,9 @@ public class ExplanationWindow extends JFrame
                         String file = this.getClass().getResource("InsertionSort.png").toString();
 
                         text = "At the beginning of <b>InsertionSort</b> the first element is assumed to be sorted resulting in a sorted part of the elements and an unsorted part of the elements." +
-                                " Subsequently, the first element of the unsorted part is extracted and inserted into the correct position of the sorted part. For that some elements of the already sorted part might have to be shifted to the right. <br><br>" +
+                                " Subsequently, the first element of the unsorted part is extracted and inserted into the correct position of the sorted part. To achieve that some elements of the already sorted part might have to be shifted to the right. <br><br>" +
                                 " <b>Procedure</b> <br><img src='"+   file + "'></img> <br> <br>" +
-                                "InsertionSort is <b>stable</b>, therefore the original order of equivalent elements does not change through the sorting.<br> <br>" +
+                                "InsertionSort is <b>stable</b>, therefore the original order of equivalent elements remains unchanged.<br> <br>" +
                                 "InsertionSort works <b>in-place</b>, as the algorithm only requires one additional memory space independent of the amount of elements.<br><br>" +
                                 "In the best case, when the elements are already sorted, the time complexity is <b>O(n)</b>, since no elements have to be inserted to the left. " +
                                 "However, in the average case and the worst case the time complexity is <b>O(n^2)</b>."; // with='500', height='500'
@@ -689,7 +689,7 @@ public class ExplanationWindow extends JFrame
                         String file = this.getClass().getResource("MergeSort.png").toString();
 
                         text = "<b>MergeSort</b> ist ein Divide-and-Conquer-Sortieralgorithmus.<br><br>" +
-                                "Divide-and-Conquer beschreibt das Prinzip, dass ein gegebenes Problem in mehrere getrennte Teilprobleme aufgeteilt und einzeln gelöst wird und die Lösung des Problems aus den Teillösungen zusammengesetzt wird.<br><br>" +
+                                "Divide-and-Conquer beschreibt das Prinzip, dass ein gegebenes Problem in mehrere getrennte Teilprobleme aufgeteilt wird, die einzeln gelöst werden, bevor die Lösung des Problems aus den Teillösungen zusammengesetzt wird.<br><br>" +
                                 " Bei MergeSort wird die Liste der Länge n mit den zu sortierenden Elementen solange rekursiv halbiert, bis n einelementige Teillisten entstehen." +
                                 " Nun folgt der eigentliche Sortiervorgang: Man nimmt immer zwei Teillisten und fügt diese zu einer neuen sortierten Teilliste zusammen, indem man immer das kleinste Element der beiden Listen streicht und in die neue Teilliste einfügt." +
                                 " Dieses Verfahren muss dann solange wiederholt werden, bis es nur noch eine Teilliste gibt.<br><br>" +
@@ -704,15 +704,15 @@ public class ExplanationWindow extends JFrame
                         String file = this.getClass().getResource("MergeSort.png").toString();
 
                         text = "<b>MergeSort</b> is a Divide and Conquer sorting algorithm.<br><br>" +
-                                "Divide and conquer is a principle, according to which a given problem is divided into sepearate partial problems. The solution of the problem is made up of the solutions of the partial problems.<br><br>" +
+                                "Divide and conquer is a principle, according to which a given problem is divided into separate partial problems. The solution of the problem is made up of the solutions of the partial problems.<br><br>" +
                                 " MergeSort works by recursively halving the list of length n of the elements to be sorted, until n partial lists with one element each are formed." +
                                 " After that the actual sorting takes place: Two partial lists are always merged into a new sorted partial list by repeatedly striking off the smallest element of both lists and inserting this element into the new partial list." +
                                 " This process is repeated until there is only one partial list at the end.<br><br>" +
                                 "<b>Procedure</b> <br><img src='"+   file + "'></img> <br> <br>" +
-                                "MergeSort is <b>stable</b>, therefore the original order of equivalent elements does not change through the sorting.<br> <br>" +
+                                "MergeSort is <b>stable</b>, therefore the original order of equivalent elements remains unchanged.<br> <br>" +
                                 "MergeSort works <b>out-of-place</b>, as the merge of two partial lists makes it necessary that these lists are stored externally, which results in an <b>additional space requirement of O(n)</b> <br><br>" +
                                 "In the best, average and worst case SelectionSort has a <b>time complexity of O(n*log(n))</b> for n input elements." +
-                                " The reason for this is, that the sucessive halving requrires a logarithmic effort and each merge of partial lists requires a linear effort.";
+                                " The reason for this is, that the successive halving requires a logarithmic effort and each merge of partial lists requires a linear effort.";
 
                     } break;
                 }
@@ -733,7 +733,7 @@ public class ExplanationWindow extends JFrame
                                 "QuickSort ist <b>nicht stabil</b>,  die Reihenfolge gleichwertiger Elemente kann sich durch die Sortierung also ändern.<br> <br>" +
                                 "QuickSort arbeitet <b>in-place</b>, da der Algorithmus keinen zusätzlichen Speicher benötigt.<br><br>" +
                                 "Im besten sowie durchschnittlichen Fall beträgt die Laufzeit <b>O(n*log(n))</b>. " +
-                                "Im schlechtesten Fall beträgt die Laufzeit dagegen <b>O(n^2)</b>. Der schlechtmöglichste Fall tritt dann ein, wenn als Pivot-Element immer das größte oder das " +
+                                "Im schlechtesten Fall beträgt die Laufzeit dagegen <b>O(n^2)</b>. Der schlechteste Fall tritt dann ein, wenn als Pivot-Element immer das größte oder das " +
                                 "kleinste Element gewählt wird, da dadurch keine effiziente Aufteilung in (annähernd gleich große) Teillisten erfolgen kann."; // with='500', height='500'
 
                     } break;
@@ -746,7 +746,7 @@ public class ExplanationWindow extends JFrame
                                 " already is at the correct position in the sorting. In the partial list with smaller elements and the partial list with larger elements " +
                                 " a pivot element is selected as well and based on that further partial lists are ascertained. Consequently, all elements are increasingly subdivided until each element is at the correct position in the sorting.<br><br>" +
                                 " <b>Procedure</b> <br><img src='"+   file + "'></img> <br> <br>" +
-                                "QuickSort is  <b>instable</b>, therefore the original order of equivalent elements might get lost through the sorting.<br> <br>" +
+                                "QuickSort is  <b>unstable</b>, therefore the original order of equivalent elements might get lost during sorting.<br> <br>" +
                                 "QuickSort works <b>in-place</b>, as the algorithm only requires one additional memory space independent of the amount of elements.<br><br>" +
                                 "In the best and average case the time complexity of SelectionSort is <b>O(n*log(n))</b>. " +
                                 "However, in the worst case the time complexity is <b>O(n^2)</b>. The worst case occurs if either the smallest or the largest element" +
@@ -777,7 +777,7 @@ public class ExplanationWindow extends JFrame
                         text = "<b>BogoSort</b> is a deliberately inefficient sorting algorithm. BogoSort acts as a negative example and should underscore the efficiency of other sorting algorithms.<br><br> " +
                                 "BogoSort repeatedly checks if all elements are already sorted." +
                                 " If this is not the case the elements are arbitrarily shuffled, for instance by swapping two random elements. This logic is repeated until all elements are sorted.  <br><br>    " +
-                                "BogoSort is  <b>instable</b>, therefore the original order of equivalent elements might get lost through the sorting.<br> <br>" +
+                                "BogoSort is  <b>unstable</b>, therefore the original order of equivalent elements might get lost during sorting.<br> <br>" +
                                 "BogoSort works <b>in-place</b>, as the algorithm only requires one additional memory space independent of the amount of elements.<br><br>" +
                                 "In the best case BogoSort has a time complexity of <b>O(n)</b>, when the elements are already sorted in the beginning. " +
                                 "In the average case the time complexity is <b>O(n*n!)</b>. " +
@@ -1069,4 +1069,3 @@ public class ExplanationWindow extends JFrame
 
 
 }
-
