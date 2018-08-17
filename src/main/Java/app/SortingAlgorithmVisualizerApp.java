@@ -24,7 +24,9 @@ public class SortingAlgorithmVisualizerApp
         final MainWindow mainwindow = new MainWindow(explanationWindow, visualizerWindow, quizWindow);
 
         mainwindow.setVisible(true);
-        mainwindow.setMinimumSize(new Dimension(1600,1000));
+        mainwindow.setPreferredSize(new Dimension(1400,1000));
+        mainwindow.setSize(new Dimension(1400,1000));
+        mainwindow.setMinimumSize(new Dimension(1200,1000));
         mainwindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         mainwindow.setLocationRelativeTo(null);
