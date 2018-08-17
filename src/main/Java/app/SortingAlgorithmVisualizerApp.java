@@ -1,9 +1,11 @@
 package main.Java.app;
 
+import main.Java.Util.LanguageManager;
 import main.Java.Views.*;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.Locale;
 
 /**
  * This is the main class to run the program
@@ -30,5 +32,7 @@ public class SortingAlgorithmVisualizerApp
         mainwindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         mainwindow.setLocationRelativeTo(null);
+
+        LanguageManager.getLanguageManagerInstance().setCurrentLocale(Locale.GERMAN);
     }
 }
