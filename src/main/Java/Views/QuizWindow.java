@@ -180,7 +180,7 @@ public class QuizWindow
                     }
 
                     firstQuiz = false;
-                    start.setText(bundle.getString("stopVisualization"));
+                    start.setText(LanguageManager.getLanguageManagerInstance().getResourceBundle("QuizWindow").getString("stopVisualization"));
                 }
                 else
                 {
@@ -201,7 +201,7 @@ public class QuizWindow
                     algorithm3Button.setText(bundle.getString("algorithm3"));
                     algorithm4Button.setText(bundle.getString("algorithm4"));
 
-                    start.setText(bundle.getString("nextAlgorithm"));
+                    start.setText(LanguageManager.getLanguageManagerInstance().getResourceBundle("QuizWindow").getString("nextAlgorithm"));
 
 
                 }
@@ -298,12 +298,11 @@ public class QuizWindow
         algorithm4Button.setEnabled(true);
         algorithm4Button.setBackground(new JButton().getBackground());
 
-        algorithm1Button.setText(bundle.getString("algorithm1"));
-        algorithm2Button.setText(bundle.getString("algorithm2"));
-        algorithm3Button.setText(bundle.getString("algorithm3"));
-        algorithm4Button.setText(bundle.getString("algorithm4"));
+        algorithm1Button.setText(LanguageManager.getLanguageManagerInstance().getResourceBundle("QuizWindow").getString("algorithm1"));
+        algorithm2Button.setText(LanguageManager.getLanguageManagerInstance().getResourceBundle("QuizWindow").getString("algorithm2"));
+        algorithm3Button.setText(LanguageManager.getLanguageManagerInstance().getResourceBundle("QuizWindow").getString("algorithm3"));
+        algorithm4Button.setText(LanguageManager.getLanguageManagerInstance().getResourceBundle("QuizWindow").getString("algorithm4"));
 
-        start.setText(bundle.getString("start"));
+        start.setText(LanguageManager.getLanguageManagerInstance().getResourceBundle("QuizWindow").getString("start"));
     }
-
 }

@@ -872,7 +872,7 @@ public class VisualizerWindow {
             {
                 if (paused == false)
                 {
-                    pauseButton.setText(bundle.getString("continue"));
+                    pauseButton.setText(LanguageManager.getLanguageManagerInstance().getResourceBundle("VisualizerWindow").getString("continue"));
                     paused = true;
                     visualizerPanel.setPause(true);
 
@@ -880,7 +880,7 @@ public class VisualizerWindow {
                 }
                 else
                 {
-                    pauseButton.setText(bundle.getString("pause"));
+                    pauseButton.setText(LanguageManager.getLanguageManagerInstance().getResourceBundle("VisualizerWindow").getString("pause"));
                     paused = false;
                     visualizerPanel.setPause(false);
                     nextStepButton.setEnabled(false);
