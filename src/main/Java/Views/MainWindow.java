@@ -176,7 +176,12 @@ public class MainWindow extends JFrame
         });
 
 
-        germanRadioButton.setSelected(true);
+        if (LanguageManager.getLanguageManagerInstance().getCurrentLocale().toString().equals(Locale.GERMAN.toString()))
+            germanRadioButton.setSelected(true);
+        else
+            englishRadioButton.setSelected(true);
+
+
 
         germanRadioButton.addActionListener(new ActionListener() {
             @Override
